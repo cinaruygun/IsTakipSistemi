@@ -1,0 +1,294 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "İş Geçmişi";
+}
+<link href="/assets/plugins/light-gallery/css/lightgallery.css" rel="stylesheet">
+<style>
+    .media-id:hover {
+        color: #00bcd4;
+    }
+
+    .task-content {
+        padding: 5px;
+    }
+    /*.slimScrollDiv, .task-content {
+        overflow: visible !important;
+    }*/
+
+    .card {
+        margin-bottom: 5px;
+        background: none !important;
+    }
+
+    .b-all {
+        border: 1px solid #dedede;
+        padding: 2px;
+    }
+
+    .other-tools {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    h5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .drag-over {
+        border: 2px dotted #555;
+        border-top: none;
+    }
+
+    /*.bg-drag {
+        background-color: rgba(0, 188, 212, 0.18) !important;
+    }*/
+    ul.status {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        list-style: none;
+    }
+
+    .todo {
+        border-left: 5px solid #e91e63;
+    }
+
+    .inprogress {
+        border-left: 5px solid #00bcd4;
+    }
+
+    .done {
+        border-left: 5px solid #4caf50;
+    }
+
+    .removed {
+        border-left: 5px solid #555;
+    }
+
+    .comment {
+        border-left: 5px solid #1b8ac3;
+    }
+
+    .media {
+        position: relative;
+        overflow: visible;
+    }
+
+    .status a {
+        color: #555;
+    }
+
+    .status .material-icons {
+        font-size: 20px;
+    }
+
+    .select2-chosen {
+        margin: -5px;
+    }
+
+    .filter button:hover, .filter button:focus {
+        color: white !important;
+    }
+
+    .filter .dropdown-menu ul.menu li {
+        padding: 10px;
+    }
+
+    .filter .body {
+        padding: 0px;
+    }
+
+    .tasks, .filter .slimScrollDiv {
+        height: 200px !important;
+    }
+</style>
+<link href="/assets/plugins/Select2/select2.css" rel="stylesheet" />
+<div class="col-lg-5 col-md-6 col-sm-8 col-xs-12">
+    <div class="card">
+        <div class="header bg-blue-grey">
+            <h2>
+                İş Geçmişi
+            </h2>
+            <ul class="nav navbar-nav navbar-right filter card-body" style="position:absolute; right:30px; top:10px; z-index:1000;">
+                <li class="dropdown" style="position:relative;">
+                    <button type="button" class="btn bg-orange waves-effect waves-float" data-toggle="dropdown" role="button">
+                        Filtreyi Aç
+                    </button>
+                    <ul class="dropdown-menu" style="position:relative;">
+                        <li class="header">Filtreleme Seçenekleri</li>
+                        <li class="body">
+                            <ul class="menu tasks">
+                                <li>
+                                    <input class="form-control" data-attribute="Assigned" />
+                                </li>
+                                <li>
+                                    <input class="form-control" data-attribute="RequestedBy"  />
+                                </li>
+                                <li>
+                                    <input class="form-control" data-attribute="UnitId"/>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn bg-orange waves-effect waves-float pull-left" onclick="funcFilterableGetWorkFlow()" data-loading="cardloading">Filtrele</button>
+                                    <button type="button" class="btn bg-red waves-effect waves-float pull-right" onclick="funcClearWorkFlowFilter()" data-loading="cardloading">Filtreyi Kaldır</button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="task-content">
+    </div>
+</div>
+<div id="taskCard" class="hidden">
+    <div class="media shadow bg-white padding-10">
+        <div class="media-body">
+            <h4 class="media-heading col-blue">##Assigned <small>tarafından <b>##StatusName.</b></small></h4>
+            <h5><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">##Title (##RequestedDate)</a></h5>
+            ##Description
+            <div class="other-tools">
+                <b class="b-all">##ProjectName Projesi</b>
+                <b class="b-all">##RequestedBy</b>
+                <b class="b-all"><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + e[i].TaskId + '</a></b>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    @*<script src="/assets/js/samples/ui/tooltips-popovers.js"></script>*@
+    <script src="/assets/plugins/light-gallery/js/lightgallery-all.js"></script>
+    <script src="/assets/plugins/Select2/select2.min.js"></script>
+    <script>
+        function funcFilterableGetWorkFlow() {
+            var parameters = "?assigned=" + $("[data-attribute='Assigned']").val() + "&RequestedBy=" + $("[data-attribute='RequestedBy']").val() + "&UnitId=" + $("[data-attribute='UnitId']").val();
+            GetWorkFlow(parameters);
+        }
+
+        function funcClearWorkFlowFilter() {
+            $("[data-attribute='Assigned']").select2("val", "");
+            $("[data-attribute='RequestedBy']").select2("val", "");
+            $("[data-attribute='UnitId']").select2("val", "");
+            GetWorkFlow('?assigned=&RequestedBy=&UnitId=')
+        }
+        $('.dropdown-menu').click(function (event) {
+            event.stopPropagation();
+        });
+        GetWorkFlow("?assigned=&RequestedBy=&UnitId=")
+        function GetWorkFlow(parameters) {
+            $.ErcanAyhan.Server.GetAsync("", "/Work/GetWorkFlow" + parameters, function (e) {
+                var html = "";
+                $(".task-content").html("");
+                for (var i = 0; i < e.length; i++) {
+                    if (e[i].MessageType == 'NewTask') {
+                        html += '<div class="media shadow bg-white padding-10 todo">                                                                ' +
+                                '   <div class="media-body">                                                                                   ' +
+                                '       <h4 class="media-heading col-blue">' + $.ErcanAyhan.ToTitleCase(e[i].CreatedBy) + ' <small> tarafından <b>' + e[i].ADateString + '</b> iş açıldı. </small></h4>      ' +
+                                '       <h5><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + $.ErcanAyhan.ToTitleCase(e[i].Title) + '</a></h5>                                                                     ' +
+                                '          ' + (e[i].Text == null ? "" : e[i].Text) + '                                                                                      ' +
+                                '           <div class="other-tools">                                                                          ' +
+                                '               <b class="b-all col-cyan">' + $.ErcanAyhan.ToTitleCase(e[i].Assigned) + '</b> tarafından <b>Yapılacak.</b>' +
+                                '               <b class="b-all"><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + e[i].TaskId + '</a></b> ' +
+                                '           </div>                                                                                             ' +
+                                '       </div>                                                                                                 ' +
+                                '   </div>';
+                    }
+                    if (e[i].MessageType == 'Comment') {
+                        html += '<div class="media shadow bg-white padding-10 comment">                                                                ' +
+                                '   <div class="media-body">                                                                                   ' +
+                                '       <h4 class="media-heading col-blue">' + $.ErcanAyhan.ToTitleCase(e[i].CreatedBy) +
+                                ' <small>tarafından <b> ' + e[i].ADateString + '</b> yorum yapıldı.</small></h4>      ' +
+                                '       <h5><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + $.ErcanAyhan.ToTitleCase(e[i].Title) + '</a></h5>                                                                     ' +
+                                '          ' + (e[i].Text == null ? "" : e[i].Text) + '                                                                                      ' +
+                                '           <div class="other-tools">                                                                          ' +
+                                '               <b class="b-all col-cyan">' + $.ErcanAyhan.ToTitleCase(e[i].Assigned) + '</b> tarafından <b>' + funcGetTaskStatusName(e[i].TaskStatusId) + '</b> ' +
+                                '               <b class="b-all"><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + e[i].TaskId + '</a></b> ' +
+                                '           </div>                                                                                             ' +
+                                '       </div>                                                                                                 ' +
+                                '   </div>';
+                    }
+                    if (e[i].MessageType == 'DueTask') {
+                        html += '<div class="media shadow bg-white padding-10 done">                                                                ' +
+                                '   <div class="media-body">                                                                                   ' +
+                                '       <h4 class="media-heading col-blue">' + $.ErcanAyhan.ToTitleCase(e[i].CreatedBy) +
+                                ' <small>tarafından <b> ' + e[i].ADateString + ' kapandı.</b></small></h4>      ' +
+                                '       <h5><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + $.ErcanAyhan.ToTitleCase(e[i].Title) + '</a></h5>                                                                     ' +
+                                 (e[i].Text != null ? '          ' + e[i].Text + ' ' : '') + '                                                                                     ' +
+                                '           <div class="other-tools">                                                                          ' +
+                                '               <b class="b-all col-cyan">' + $.ErcanAyhan.ToTitleCase(e[i].Assigned) + '</b> tarafından <b>' + funcGetTaskStatusName(e[i].TaskStatusId) + '</b> ' +
+                                '               <b class="b-all"><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + e[i].TaskId + '</a></b> ' +
+                                '           </div>                                                                                             ' +
+                                '       </div>                                                                                                 ' +
+                                '   </div>';
+                    }
+
+                    if (e[i].MessageType == 'History') {
+                        html += '<div class="media shadow bg-white padding-10 ' + funcGetTaskStatusIdName(e[i].TaskStatusId) + '">                                                                ' +
+                                '   <div class="media-body">                                                                                   ' +
+                                '       <h4 class="media-heading col-blue">' + $.ErcanAyhan.ToTitleCase(e[i].CreatedBy) +
+                                ' <small><b> ' + e[i].ADateString + '</b> iş durumunu <b>' + funcGetTaskStatusName(e[i].TaskStatusId) + '</b> yaptı.</small></h4>      ' +
+                                '       <h5><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + $.ErcanAyhan.ToTitleCase(e[i].Title) + '</a></h5>                                                                     ' +
+                                '          ' + (e[i].Text == null ? "" : e[i].Text) + '                                                                                      ' +
+                                '           <div class="other-tools">                                                                          ' +
+                                '               <b class="b-all col-cyan">' + $.ErcanAyhan.ToTitleCase(e[i].Assigned) + '</b> tarafından <b>' + funcGetTaskStatusName(e[i].TaskStatusId) + '</b> ' +
+                                '               <b class="b-all"><a href="/Work/NewOrEdit?Id=' + e[i].TaskId + '">' + e[i].TaskId + '</a></b> ' +
+                                '           </div>                                                                                             ' +
+                                '       </div>                                                                                                 ' +
+                                '   </div>';
+                    }
+                }
+                $(".task-content").html(html);
+                $.ErcanAyhan.Loading.waitMe('hide');
+                $(".media-body span").tooltip();
+            });
+        }
+
+        $(".col-lg-4").attr("style", "height:" + (window.innerHeight - 180) + "px;");
+        $('.task-content').slimScroll({ height: (window.innerHeight - 180) + "px" });
+        $('.slimScrollDiv').css('overflow', '');
+
+        function funcGetTaskStatusName(e) {
+            if (e == parseInt('@Arch.Core.Enums.TaskStatusTypes.Done'))
+                return 'Tamamlandı';
+            if (e == parseInt('@Arch.Core.Enums.TaskStatusTypes.InProgress'))
+                return 'Devam Ediyor';
+            if (e == parseInt('@Arch.Core.Enums.TaskStatusTypes.Removed'))
+                return 'Kaldırıldı';
+            if (e == parseInt('@Arch.Core.Enums.TaskStatusTypes.ToDo'))
+                return 'Yapılacak';
+        }
+
+        function funcGetTaskStatusIdName(e) {
+            if (e == parseInt('@Arch.Core.Enums.TaskStatusTypes.Done'))
+                return 'done';
+            if (e == parseInt('@Arch.Core.Enums.TaskStatusTypes.InProgress'))
+                return 'inprogress';
+            if (e == parseInt('@Arch.Core.Enums.TaskStatusTypes.Removed'))
+                return 'removed';
+            if (e == parseInt('@Arch.Core.Enums.TaskStatusTypes.ToDo'))
+                return 'todo';
+        }
+        $.ErcanAyhan.Server.PostAsync("", "/Work/GetProjectsPersonsUnits", function (e) {
+            $("[data-attribute='RequestedBy']").select2({
+                placeholder: 'Talep eden kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+                allowClear: true
+            });
+            $("[data-attribute='Assigned']").select2({
+                placeholder: 'Atanan kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+                allowClear: true
+            });
+            $("[data-attribute='UnitId']").select2({
+                placeholder: 'Birim seçiniz',
+                type: "GET",
+                data: e.Units,
+                allowClear: true
+            });
+            $.ErcanAyhan.Loading.waitMe('hide');
+        });
+    </script>
+}

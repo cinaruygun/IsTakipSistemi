@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Unity.Mvc5</id>
+    <version>1.2.3</version>
+    <title>Unity.Mvc5</title>
+    <authors>Paul Hiles</authors>
+    <owners>Paul Hiles</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/devtrends/Unity.Mvc5</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Unity.Mvc5 allows the simple integration of the Unity IoC container with ASP.NET MVC 5.</description>
+    <summary />
+    <tags>unity asp.net mvc mvc5 ioc di</tags>
+    <dependencies>
+      <dependency id="Unity" version="4.0.1" />
+      <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
+    </dependencies>
+  </metadata>
+</package>

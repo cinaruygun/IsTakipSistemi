@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Giriş Yap";
+    Layout = "~/Views/Shared/_Login_Layout.cshtml";
+    ViewBag.BodyClassName = "login-page";
+}
+<div class="login-box">
+    <div class="logo">
+        <a href="javascript:void(0);">İş Takip Sistemi</a>
+        <small>Ercan Ayhan</small>
+    </div>
+    <div class="card">
+        <div class="body mask">
+            <div data-id="formLogin" data-model-url="/Login/LoginControl" data-ajax-function="funcLoginResponse">
+                <div class="msg">Giriş yapmak için bilgilerinizi girin</div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">person</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" name="username" data-attribute="UserName" placeholder="Kullanıcı Adı" required autofocus>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="password" class="form-control" name="password" data-attribute="Password" placeholder="Şifreniz" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8 p-t-5">
+                        <input type="checkbox" name="rememberme" id="rememberme" data-attribute="RememberMe" class="filled-in chk-col-pink">
+                        <label for="rememberme">Beni Hatırla</label>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-block bg-pink waves-effect" type="button" onclick="formSendModel($('[data-id=\'formLogin\']')[0].dataset)">Giriş Yap</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $("body").on("keypress", function (e) {
+            e.keyCode == 13 ? formSendModel($('[data-id=\'formLogin\']')[0].dataset) : 1 == 1;
+        });
+        function funcLoginResponse(e) {
+            @if (Request.QueryString.Count == 0)
+            {<text>window.location.reload();</text>}
+            else
+            {<text>window.location="@Request.QueryString[0]";</text>}
+        }
+    </script>
+}

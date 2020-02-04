@@ -1,0 +1,33 @@
+D:\Egitim\ProjectMaskiPortal\Arch.Dto\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Dto\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Dto\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Dto\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Dto\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Dto\obj\Debug\Arch.Dto.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectMaskiPortal\Arch.Dto\obj\Debug\Arch.Dto.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Dto\obj\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectPortal\Arch.Dto\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectPortal\Arch.Dto\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectPortal\Arch.Dto\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectPortal\Arch.Dto\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectPortal\Arch.Dto\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.Dto\obj\Debug\Arch.Dto.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectPortal\Arch.Dto\obj\Debug\Arch.Dto.dll
+D:\Egitim\ProjectPortal\Arch.Dto\obj\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Dto\obj\Debug\Arch.Dto.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Dto\obj\Debug\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Dto\obj\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Dto\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Dto\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Dto\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Dto\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectWork\Arch.Dto\bin\Debug\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\bin\Debug\Arch.Dto.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\bin\Debug\Arch.Dto.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\bin\Debug\Arch.Core.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\bin\Debug\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\obj\Debug\Arch.Dto.csprojAssemblyReference.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\obj\Debug\Arch.Dto.csproj.CoreCompileInputs.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\obj\Debug\Arch.Dto.csproj.CopyComplete
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\obj\Debug\Arch.Dto.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Dto\obj\Debug\Arch.Dto.pdb

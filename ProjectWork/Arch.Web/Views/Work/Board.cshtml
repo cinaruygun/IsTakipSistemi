@@ -1,0 +1,264 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "İş Tablom";
+}
+<link href="/assets/plugins/light-gallery/css/lightgallery.css" rel="stylesheet">
+<style>
+    .media-id:hover {
+        color: #00bcd4;
+    }
+
+    .task-content {
+        padding: 5px;
+    }
+    /*.slimScrollDiv, .task-content {
+        overflow: visible !important;
+    }*/
+
+    .card {
+        margin-bottom: 5px;
+        background: none !important;
+    }
+
+    .b-all {
+        border: 1px solid #dedede;
+        padding: 2px;
+    }
+
+    .other-tools {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    h5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .drag-over {
+        border: 2px dotted #555;
+        border-top: none;
+    }
+
+    /*.bg-drag {
+        background-color: rgba(0, 188, 212, 0.18) !important;
+    }*/
+    ul.status {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        list-style: none;
+    }
+
+    .todo .media {
+        border-left: 5px solid #e91e63;
+    }
+
+    .inprogress .media {
+        border-left: 5px solid #00bcd4;
+    }
+
+    .done .media {
+        border-left: 5px solid #4caf50;
+    }
+
+    .media {
+        position: relative;
+        overflow: visible;
+    }
+
+    .status a {
+        color: #555;
+    }
+
+    .status .material-icons {
+        font-size: 20px;
+    }
+</style>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="header bg-pink">
+            <h2>
+                Yapacaklarım
+            </h2>
+            <ul class="header-dropdown m-r-0">
+                <li class="dropdown">
+                    <a href="/Work" class="dropdown-toggle waves-white waves-effect col-white" data-loading="cardloading">
+                        <div id="todoCount"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="task-content todo" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" ondragleave="DragLeave(event, this)" data-taskstatusid="@Arch.Core.Enums.TaskStatusTypes.ToDo">
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="header bg-cyan">
+            <h2>
+                Devam Ettiklerim
+            </h2>
+            <ul class="header-dropdown m-r-0">
+                <li class="dropdown">
+                    <a href="/Work" class="dropdown-toggle waves-white waves-effect col-white" data-loading="cardloading">
+                        <div id="inProgressCount"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="task-content inprogress" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" ondragleave="DragLeave(event, this)" data-taskstatusid="@Arch.Core.Enums.TaskStatusTypes.InProgress">
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="header bg-green">
+            <h2>
+                Tamamladıklarım
+            </h2>
+            <ul class="header-dropdown m-r-0">
+                <li class="dropdown">
+                    <a href="/Work" class="dropdown-toggle waves-white waves-effect col-white" data-loading="cardloading">
+                        <div id="doneCount"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="task-content done" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" ondragleave="DragLeave(event, this)" data-taskstatusid="@Arch.Core.Enums.TaskStatusTypes.Done">
+    </div>
+</div>
+<div id="taskCard" class="hidden">
+    <div class="media shadow bg-white padding-10 p-b-5 p-t-5" draggable="true" ondragstart="drag(this)" data-taskid="##taskId" data-taskstatusid="##taskStatusId">
+        <ul class="status m-r--5">
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                    <i class="material-icons">more_vert</i>
+                </a>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="javascript:void(0);" onclick="funcInsertTaskHistory('##taskId', @Arch.Core.Enums.TaskStatusTypes.ToDo,'##taskStatusId')" class=" waves-effect waves-block">Yapılacak</a></li>
+                    <li><a href="javascript:void(0);" onclick="funcInsertTaskHistory('##taskId', @Arch.Core.Enums.TaskStatusTypes.InProgress,'##taskStatusId')" class=" waves-effect waves-block">Devam Ediyor</a></li>
+                    <li><a href="javascript:void(0);" onclick="funcInsertTaskHistory('##taskId', @Arch.Core.Enums.TaskStatusTypes.Done,'##taskStatusId')" class=" waves-effect waves-block">Tamamlandı</a></li>
+                    <li><a href="javascript:void(0);" onclick="funcInsertTaskHistory('##taskId', @Arch.Core.Enums.TaskStatusTypes.Removed,'##taskStatusId')" class=" waves-effect waves-block">Kaldırıldı</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="media-body">
+            <h5>
+                <a href="/Work/NewOrEdit?Id=##taskId" class="p-b-5">##Title</a>
+                <br /><small class="m-t-5"><b>##RequestedDate</b></small>
+            </h5>
+            <div class="other-tools pull-right">
+                <b class="##bgColor p-5">##ProjectName</b>
+            </div>
+            <h4 class="media-heading col-blue-grey m-b-0 m-t-10">
+                <b class="##bgColor p-5 circle m-r-5">##Initials</b>##Assigned
+            </h4>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="/assets/plugins/light-gallery/js/lightgallery-all.js"></script>
+    <script>
+        funcGetTasks();
+        function funcGetTasks() {
+            $.ErcanAyhan.Server.GetAsync("", "/Work/GetTasksByAssignedMe", function (e) {
+                var todoHtml = "", inProgressHtml = "", doneHtml = "";
+                var todoCount = 0, inProgressCount = 0, doneCount = 0;
+                $(".todo").html("");
+                $(".inprogress").html("");
+                $(".done").html("");
+                for (var i = 0; i < e.length; i++) {
+                    var colorList = new Array("bg-cyan", "bg-teal", "bg-green", "bg-purple", "bg-orange")
+                    var color = colorList[Math.floor(Math.random() * colorList.length)];
+
+                    if (e[i].TaskStatusId == parseInt("@Arch.Core.Enums.TaskStatusTypes.ToDo")) {
+                        todoHtml += $("#taskCard").html().replace(/##taskId/g, e[i].Id).replace(/##taskStatusId/g, e[i].TaskStatusId).replace(/##Assigned/g, ($.ErcanAyhan.ToTitleCase(e[i].Assigned) == undefined ? "Atanacak Biri" : $.ErcanAyhan.ToTitleCase(e[i].Assigned)))
+                        .replace(/##TaskStatusName/g, e[i].TaskStatusName).replace(/##Title/g, $.ErcanAyhan.ToTitleCase(e[i].Title)).replace(/##Description/g, e[i].Description == null ? "" : e[i].Description).
+                        replace(/##ProjectName/g, e[i].ProjectName).replace(/##RequestedBy/g, $.ErcanAyhan.ToTitleCase(e[i].RequestedBy)).replace(/##RequestedDate/g, e[i].RequestedDate)
+                        .replace(/##ImageId/g, e[i].ImageId).replace(/##bgColor/g, color).replace(/##Initials/g, e[i].Initials);
+                        var isLightGallery = false;
+                        if (e[i].MediaIds != null) {
+                            var mediaHtml = "";
+                            var splitMediaIds = e[i].MediaIds.split(",");
+                            for (var j = 0; j < splitMediaIds.length; j++) {
+                                mediaHtml += "<a href='/Media/Viewer/" + splitMediaIds[j] + "'></a>";
+                            }
+                            isLightGallery = true;
+                        }
+                        $(".todo").html(todoHtml);
+                        todoCount++;
+                    }
+                    if (e[i].TaskStatusId == parseInt("@Arch.Core.Enums.TaskStatusTypes.InProgress")) {
+                        inProgressHtml += $("#taskCard").html().replace(/##taskId/g, e[i].Id).replace(/##taskStatusId/g, e[i].TaskStatusId).replace(/##Assigned/g, ($.ErcanAyhan.ToTitleCase(e[i].Assigned) == undefined ? "Atanacak Biri" : $.ErcanAyhan.ToTitleCase(e[i].Assigned)))
+                        .replace(/##TaskStatusName/g, e[i].TaskStatusName).replace(/##Title/g, $.ErcanAyhan.ToTitleCase(e[i].Title)).replace(/##Description/g, e[i].Description == null ? "" : e[i].Description).
+                            replace(/##ProjectName/g, e[i].ProjectName).replace(/##RequestedBy/g, $.ErcanAyhan.ToTitleCase(e[i].RequestedBy)).replace(/##RequestedDate/g, e[i].RequestedDate)
+                            .replace(/##ImageId/g, e[i].ImageId).replace(/##bgColor/g, color).replace(/##Initials/g, e[i].Initials);
+                        var isLightGallery = false;
+                        if (e[i].MediaIds != null) {
+                            var mediaHtml = "";
+                            var splitMediaIds = e[i].MediaIds.split(",");
+                            for (var j = 0; j < splitMediaIds.length; j++) {
+                                mediaHtml += "<a href='/Media/Viewer/" + splitMediaIds[j] + "'></a>";
+                            }
+                            isLightGallery = true;
+                        }
+                        $(".inprogress").html(inProgressHtml);
+                        inProgressCount++;
+                    }
+                    if (e[i].TaskStatusId == parseInt("@Arch.Core.Enums.TaskStatusTypes.Done")) {
+                        doneHtml += $("#taskCard").html().replace(/##taskId/g, e[i].Id).replace(/##taskStatusId/g, e[i].TaskStatusId).replace(/##Assigned/g, ($.ErcanAyhan.ToTitleCase(e[i].Assigned) == undefined ? "Atanacak Biri" : $.ErcanAyhan.ToTitleCase(e[i].Assigned)))
+                        .replace(/##TaskStatusName/g, e[i].TaskStatusName).replace(/##Title/g, $.ErcanAyhan.ToTitleCase(e[i].Title)).replace(/##Description/g, e[i].Description == null ? "" : e[i].Description).
+                            replace(/##ProjectName/g, e[i].ProjectName).replace(/##RequestedBy/g, $.ErcanAyhan.ToTitleCase(e[i].RequestedBy))
+                            .replace(/##RequestedDate/g, e[i].DueDate).replace(/##ImageId/g, e[i].ImageId).replace(/##bgColor/g, color).replace(/##Initials/g, e[i].Initials);
+                        var isLightGallery = false;
+                        if (e[i].MediaIds != null) {
+                            var mediaHtml = "";
+                            var splitMediaIds = e[i].MediaIds.split(",");
+                            for (var j = 0; j < splitMediaIds.length; j++) {
+                                mediaHtml += "<a href='/Media/Viewer/" + splitMediaIds[j] + "'></a>";
+                            }
+                            isLightGallery = true;
+                        }
+                        $(".done").html(doneHtml);
+                        doneCount++;
+                    }
+                }
+                $("#todoCount").html(todoCount == 0 ? "Yapılacak iş yok" : todoCount + " iş Yapılacak");
+                $("#inProgressCount").html(inProgressCount == 0 ? "Devam Eden iş yok" : inProgressCount + " iş Devam Ediyor");
+                $("#doneCount").html(doneCount == 0 ? "Tamamlanmış iş yok" : doneCount + " iş Tamamlandı");
+                $.ErcanAyhan.Loading.waitMe('hide');
+                $(".media-body a").tooltip();
+            });
+        }
+        var selectedTaskId = null;
+        var selectedTaskStatusId = null;
+        function allowDrop(ev, e) {
+            ev.preventDefault();
+            if (e.className.indexOf(" drag-over") == -1)
+                e.className = e.className + " drag-over";
+        }
+        function DragLeave(ev, e) {
+            e.className = e.className.replace(" drag-over", "");
+        }
+        function drag(e) {
+            selectedTaskId = e.dataset.taskid;
+            selectedTaskStatusId = e.dataset.taskstatusid;
+        }
+        function drop(ev, e) {
+            e.className = e.className.replace(" drag-over", "");
+            funcInsertTaskHistory(selectedTaskId, ev.currentTarget.dataset.taskstatusid, selectedTaskStatusId);
+        }
+        function funcInsertTaskHistory(taskId, taskStatusId, xtaskStatusId) {
+            if (xtaskStatusId != taskStatusId) {
+                $.ErcanAyhan.Server.PostAsync({ TaskId: taskId, TaskStatusId: taskStatusId }, "/Work/InsertTaskHistory", function (e) {
+                    funcGetTasks();
+                });
+            }
+        }
+        $(".col-lg-4").attr("style", "height:" + (window.innerHeight - 150) + "px;");
+        $('.task-content').slimScroll({ height: (window.innerHeight - 150) + "px" });
+        $('.slimScrollDiv').css('overflow', '');
+    </script>
+}

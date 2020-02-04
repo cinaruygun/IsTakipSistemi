@@ -1,0 +1,301 @@
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Web.dll.config
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Web.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Web.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Antlr3.Runtime.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Core.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Data.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Dto.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.IoC.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.RESTfulService.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Service.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Utilities.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Web.Framework.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.WebService.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\EntityFramework.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\EntityFramework.SqlServer.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\EPPlus.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\itextsharp.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.Unity.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Newtonsoft.Json.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.Helpers.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.Mvc.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.Optimization.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.Razor.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.WebPages.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.WebPages.Razor.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Unity.Mvc5.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\WebGrease.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Core.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Data.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Dto.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.IoC.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Service.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Utilities.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.Web.Framework.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Arch.WebService.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\EntityFramework.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\EntityFramework.SqlServer.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\EPPlus.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\itextsharp.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.Unity.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.Helpers.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.Mvc.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.Razor.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.WebPages.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.WebPages.Razor.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\System.Web.Optimization.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Web\bin\Antlr3.Runtime.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Web\obj\Debug\Arch.Web.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectMaskiPortal\Arch.Web\obj\Debug\Arch.Web.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Web\obj\Debug\Arch.Web.pdb
+D:\Egitim\ProjectPortal\Arch.Web\obj\Debug\Arch.Web.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Web.dll.config
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Web.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Web.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\Antlr3.Runtime.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Core.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Data.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Dto.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.IoC.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Service.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Utilities.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Web.Framework.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\EntityFramework.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\EntityFramework.SqlServer.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\EPPlus.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\itextsharp.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.Unity.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Newtonsoft.Json.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.Helpers.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.Mvc.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.Optimization.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.Razor.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.WebPages.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.WebPages.Razor.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Unity.Mvc5.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\WebGrease.dll
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Data.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Dto.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.IoC.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Service.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Utilities.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\Arch.Web.Framework.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\EntityFramework.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\EntityFramework.SqlServer.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\EPPlus.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\itextsharp.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.Unity.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.Helpers.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.Mvc.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.Razor.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.WebPages.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.WebPages.Razor.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\System.Web.Optimization.xml
+D:\Egitim\ProjectPortal\Arch.Web\bin\Antlr3.Runtime.pdb
+D:\Egitim\ProjectPortal\Arch.Web\obj\Debug\Arch.Web.dll
+D:\Egitim\ProjectPortal\Arch.Web\obj\Debug\Arch.Web.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Web.dll.config
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Web.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Web.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Antlr3.Runtime.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Data.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.IoC.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Service.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Utilities.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Web.Framework.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\EntityFramework.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\EntityFramework.SqlServer.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\EPPlus.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\itextsharp.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Newtonsoft.Json.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.Helpers.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.Mvc.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.Optimization.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.Razor.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.WebPages.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.WebPages.Razor.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Unity.Mvc5.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\WebGrease.dll
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Data.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.IoC.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Service.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Utilities.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Arch.Web.Framework.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\EntityFramework.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\EntityFramework.SqlServer.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\EPPlus.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\itextsharp.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.Helpers.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.Mvc.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.Razor.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.WebPages.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.WebPages.Razor.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\System.Web.Optimization.xml
+D:\Egitim\ProjectWork\Arch.Web\bin\Antlr3.Runtime.pdb
+D:\Egitim\ProjectWork\Arch.Web\obj\Debug\Arch.Web.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Web\obj\Debug\Arch.Web.dll
+D:\Egitim\ProjectWork\Arch.Web\obj\Debug\Arch.Web.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Web.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Web.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Web.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Antlr3.Runtime.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Core.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Data.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Dto.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.IoC.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Service.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Utilities.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Web.Framework.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\EntityFramework.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\EPPlus.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\itextsharp.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Newtonsoft.Json.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Oracle.ManagedDataAccess.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.Helpers.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.Mvc.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.Optimization.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.Razor.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.WebPages.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Unity.Mvc5.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\WebGrease.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Data.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Data.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Dto.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.IoC.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Service.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Utilities.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Utilities.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Arch.Web.Framework.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\EntityFramework.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\EPPlus.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\itextsharp.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.Helpers.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.Mvc.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.Razor.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.WebPages.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\System.Web.Optimization.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\bin\Antlr3.Runtime.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\obj\Debug\Arch.Web.csprojAssemblyReference.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\obj\Debug\Arch.Web.csproj.CoreCompileInputs.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\obj\Debug\Arch.Web.csproj.CopyComplete
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\obj\Debug\Arch.Web.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Web\obj\Debug\Arch.Web.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Web.dll.config
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Web.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Web.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Antlr3.Runtime.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Core.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Data.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Dto.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.IoC.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Service.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Utilities.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Web.Framework.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\EntityFramework.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\EPPlus.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\itextsharp.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Newtonsoft.Json.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Oracle.ManagedDataAccess.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.Helpers.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.Mvc.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.Optimization.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.Razor.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.WebPages.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Unity.Mvc5.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\WebGrease.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Core.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Data.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Data.dll.config
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Dto.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.IoC.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Service.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Utilities.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Utilities.dll.config
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Arch.Web.Framework.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\EntityFramework.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\EPPlus.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\itextsharp.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.Helpers.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.Mvc.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.Razor.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.WebPages.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\System.Web.Optimization.xml
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\bin\Antlr3.Runtime.pdb
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\obj\Debug\Arch.Web.csprojAssemblyReference.cache
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\obj\Debug\Arch.Web.csproj.CoreCompileInputs.cache
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\obj\Debug\Arch.Web.csproj.CopyComplete
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\obj\Debug\Arch.Web.dll
+C:\Users\cinar\Desktop\iş\ProjectWork\Arch.Web\obj\Debug\Arch.Web.pdb

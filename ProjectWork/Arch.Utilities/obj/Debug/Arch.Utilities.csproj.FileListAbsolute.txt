@@ -1,0 +1,46 @@
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\bin\Debug\Arch.Utilities.dll.config
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\obj\Debug\Arch.Utilities.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\obj\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Utilities\obj\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectPortal\Arch.Utilities\bin\Debug\Arch.Utilities.dll.config
+D:\Egitim\ProjectPortal\Arch.Utilities\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectPortal\Arch.Utilities\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectPortal\Arch.Utilities\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectPortal\Arch.Utilities\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectPortal\Arch.Utilities\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectPortal\Arch.Utilities\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectPortal\Arch.Utilities\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.Utilities\obj\Debug\Arch.Utilities.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectPortal\Arch.Utilities\obj\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectPortal\Arch.Utilities\obj\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Debug\Arch.Utilities.dll.config
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Utilities\obj\Debug\Arch.Utilities.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Utilities\obj\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectWork\Arch.Utilities\obj\Debug\Arch.Utilities.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\bin\Debug\Arch.Utilities.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\bin\Debug\Arch.Utilities.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\bin\Debug\Arch.Utilities.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\bin\Debug\Arch.Dto.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\bin\Debug\Arch.Core.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\bin\Debug\Arch.Dto.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\bin\Debug\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\obj\Debug\Arch.Utilities.csprojAssemblyReference.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\obj\Debug\Arch.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\obj\Debug\Arch.Utilities.csproj.CopyComplete
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\obj\Debug\Arch.Utilities.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Utilities\obj\Debug\Arch.Utilities.pdb

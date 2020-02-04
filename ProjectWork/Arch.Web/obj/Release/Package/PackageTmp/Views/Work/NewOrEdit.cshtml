@@ -1,0 +1,390 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "İş Ata/Düzenle";
+}
+@model Arch.Dto.SingleDto.TaskSingleDto
+<style>
+    .pre-media img, .pre-media .file {
+        height: 100px;
+        width: 80px;
+    }
+
+    .pre-media i {
+        font-size: 40px;
+        vertical-align: text-bottom;
+    }
+
+    .lg-video-cont {
+        max-width: 80% !important;
+    }
+
+    iframe {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+</style>
+<link href="/assets/plugins/Select2/select2.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="header bg-blue">
+                <h2>
+                    İş Ekle/Düzenle<b>
+                        - @if (Model.Task.Id != 0)
+                        { <text> [@Model.Task.Id] nolu işi düzenle </text>}
+                        else
+                        { <text> Yeni Kayıt </text>}
+                    </b>
+                </h2>
+            </div>
+            <div class="body">
+                <div data-id="formTask" @if (Model.Task.Id == 0) { <text> data-model-url="/Work/InsertTask" </text>              } else { <text> data-model-url="/Work/UpdateTask" </text>              }>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <b>Talep Eden</b>
+                            <code>* Gerekli</code>
+                            <div class="input-group">
+                                <input class="form-control" data-attribute="RequestedBy" @if (Model.Task.Id != 0) { <text> value="@Model.Task.RequestedBy" </text>              } else { <text> value="@Accesses.PersonId" </text>  } />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <b>İş Durumu</b>
+                            <code>* Gerekli</code>
+                            <div class="input-group">
+                                <select data-attribute="TaskStatusId" class="form-control" onchange="if(this.value==38){$('#dueDate').val('@DateTime.Now.ToString("yyy-MM-ddTHH:mm")');$('[href=\'#collapseTwo_1\']').click();$('[data-attribute=\'DueDate\']').focus();}">
+                                    <option value="@Arch.Core.Enums.TaskStatusTypes.ToDo" selected>Yapılacak</option>
+                                    <option value="@Arch.Core.Enums.TaskStatusTypes.InProgress">Devam Ediyor</option>
+                                    <option value="@Arch.Core.Enums.TaskStatusTypes.Done">Tamamlandı</option>
+                                    <option value="@Arch.Core.Enums.TaskStatusTypes.Removed">Kaldırıldı</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="margin-bottom:0">
+                            <b>Talep Edilen Birim</b>
+                            <code>* Gerekli</code>
+                            <div class="input-group">
+                                <input class="form-control" data-attribute="UnitId" onchange="funcUnitChange(this)" @if (Model.Task.Id != 0) { <text> value="@Model.Task.UnitId" </text>  }/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <b>Proje</b>
+                            <code>* Gerekli</code>
+                            <div class="input-group">
+                                <input class="hidden" data-attribute="Id" value="@Model.Task.Id" />
+                                <input class="form-control" data-attribute="ProjectId" @if (Model.Task.Id != 0) { <text> value="@Model.Task.ProjectId" </text>          }
+                                       onchange="$('[data-attribute=\'Assigned\']').select2('open')" />
+                            </div>
+                        </div>
+                        <input type="text" class="form-control hidden" data-attribute="Queue" @if (Model.Task.Id != 0) { <text> value="@Model.Task.Queue" </text>          } else { <text> value="1" </text>  } />
+                        <div class="col-md-6">
+                            <b>Atanacak Kişi</b>
+                            <code>* Gerekli</code>
+                            <div class="input-group">
+                                <input class="form-control" data-attribute="Assigned" @if (Model.Task.Id != 0) { <text> value="@Model.Task.Assigned" </text>   } onchange="$('[data-attribute=\'Title\']').focus()" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <b>Takip Edecekler</b>
+                            <div class="input-group">
+                                <input class="form-control" data-attribute="Followers" @if (Model.Task.Id != 0) { <text> value="@Model.Task.Followers" </text>               } />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <b>Başlık</b>
+                            <code>* Gerekli</code>
+                            <div class="input-group">
+                                <div class="form-line">
+                                    <input type="text" class="form-control" data-attribute="Title" value="@Model.Task.Title" onblur="$('[data-attribute=\'RequestedDate\']').focus()" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <b>Talep Tarihi</b>
+                            <code>* Gerekli</code>
+                            <div class="input-group">
+                                <div class="form-line">
+                                    <input type="datetime-local" class="form-control" data-attribute="RequestedDate" @if (Model.Task.Id != 0) { <text> value="@Model.Task.RequestedDate.ToString("yyy-MM-ddTHH:mm")" </text>                } else { <text> value="@DateTime.Now.ToString("yyy-MM-ddTHH:mm")</text>}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="accordion_1" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" role="tab" id="headingOne_1">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseOne_1" aria-expanded="false" aria-controls="collapseOne_1" class="collapsed">
+                                        <i class="material-icons">assignment</i> Detay
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne_1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne_1" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <b>İş İçeriği</b>
+                                            <div class="input-group">
+                                                <div class="form-line">
+                                                    <textarea class="form-control" data-attribute="Description" maxlength="1000" style="min-height:55px;" onkeyup="textAreaAdjust(this)" onfocus="textAreaAdjust(this)">@Model.Task.Description</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <b>Dosyalar</b>
+                                            <div class="input-group" id="imgList">
+                                                @for (int i = 0; i < Model.MediaIds.Count; i++)
+                                                {
+                                                    <a href="/ViewerWithName/@Model.MediaIds[i]" target="_blank">@Model.FileNames[i]</a>
+                                                    <br />
+                                                }
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="input-group">
+                                                <a href="javascript:void(0);" onclick="$('#mediaSelect').click()"  class="btn bg-blue btn-circle-lg waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">attach_file</i>
+                                                </a>
+                                                <a href="javascript:void(0);" onclick="$.ErcanAyhan.Server.Get('', '/Media/ClearTempMedia', ''); $('#imgList').html('')" data-toggle="tooltip" data-original-title="Resimleri Kaldır" data-placement="top" class="btn bg-pink btn-circle-lg waves-effect waves-circle waves-float">
+                                                    <i class="material-icons">delete</i>
+                                                </a>
+                                                <input id="mediaSelect" type="file" style="margin-top:5px; display:none" multiple onchange="funcCreateTempMediaList(this)" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading" role="tab" id="headingTwo_1">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseTwo_1" aria-expanded="false" aria-controls="collapseTwo_1">
+                                        <i class="material-icons">assignment_turned_in</i> Sonuç
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo_1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo_1" aria-expanded="false">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <b>Kapanma Tarihi</b>
+                                            <div class="input-group">
+                                                <div class="form-line">
+                                                    <input id="dueDate" type="datetime-local" class="form-control" data-attribute="DueDate" @if (Model.Task.DueDate != null) { <text> value="@Model.Task.DueDate.Value.ToString("yyy-MM-ddTHH:mm")" </text>    }>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <b>Sonuç</b>
+                                            <div class="input-group">
+                                                <div class="form-line">
+                                                    <textarea class="form-control" data-attribute="ResultContent" maxlength="1000" style="min-height: 60px;" onkeyup="textAreaAdjust(this)" onfocus="textAreaAdjust(this)">@Model.Task.ResultContent</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(history.back())" class="btn bg-blue waves-effect">
+                        <i class="material-icons">arrow_back</i> Geri Dön
+                    </a>
+                    <a href="/Work" class="btn bg-blue waves-effect">
+                        <i class="material-icons">assignment</i> İş Listesi
+                    </a>
+                    <a href="javascript:void(0);" onclick="funcCopyTask()" class="btn bg-blue waves-effect">
+                        <i class="material-icons">content_copy</i> Kopyala
+                    </a>
+                    <a href="javascript:void(formSendModel($('[data-id=\'formTask\']')[0].dataset));" class="btn bg-blue waves-effect">
+                        <i class="material-icons">save</i> Kaydet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="header bg-cyan">
+                <h2>
+                    İş Akışı
+                </h2>
+            </div>
+            <div class="body">
+                <h2>İş Geçmişi</h2>
+                <div id="history">
+                    <div class="media" style="margin-top:0;border-bottom:1px solid #f1f1f1">
+                        <h4 class="media-heading col-blue" style="font-size:15px;">##Assigned <small>tarafından <b>##TaskStatusName.</b></small></h4>
+                        <h5 class="media-heading col-blue"><small>##CreatedDate <b>##CreatedBy</b> durumu değiştirdi.</small></h5>
+                    </div>
+                </div>
+                <h2>Yorumlar</h2>
+                <div id="innerComment">
+                </div>
+                <div class="input-group shadow-2" style="margin-bottom:0">
+                    <div class="form-line">
+                        <textarea id="comment" class="form-control" style="overflow: hidden" placeholder="yorum yaz..." onkeyup="textAreaAdjust(this)"></textarea>
+                    </div>
+                    <button class="btn bg-teal waves-effect pull-right" onclick="funcInsertTaskComment('@Model.Task.Id',this)" style="margin: 5px;">
+                        Yorumu Gönder
+                    </button>
+                    <code>* yorumlar mail olarak gitmektedir.</code>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden" id="comments">
+    <div class="media" style="margin-top:0;">
+        <h4 class="media-heading col-blue" style="font-size:15px;">##FullName <small><b>##Date</b> yorum yaptı.</small></h4>
+        ##Description
+    </div>
+</div>
+@section scripts{
+    <script src="/assets/plugins/Select2/select2.min.js"></script>
+    <script>
+        var tempId = 0;
+        $.ErcanAyhan.Server.GetAsync("", "/Work/GetDaireMudurlukUnits", function (e) {
+            $("[data-attribute='UnitId']").select2({
+                placeholder: 'Birim seçiniz',
+                type: "GET",
+                data: e,
+            });
+        });
+        $.ErcanAyhan.Server.PostAsync("", "/Work/GetProjectsPersonsUnits", function (e) {
+            $("[data-attribute='ProjectId']").select2({
+                placeholder: 'Proje seçiniz',
+                type: "GET",
+                data: [],
+            });
+            $("[data-attribute='RequestedBy']").select2({
+                placeholder: 'Talep eden kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+            });
+            $("[data-attribute='Assigned']").select2({
+                placeholder: 'Atanacak kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+            });
+            $("[data-attribute='Followers']").select2({
+                placeholder: 'Kişi seçiniz',
+                type: "GET",
+                data: e.Persons,
+                multiple: true
+            });
+            @if (Model.Task.Id != 0) {
+       <text>
+            $.ErcanAyhan.Server.PostAsync("", "/Work/GetUnitProjectList?unitId=@Model.Task.UnitId", function (z) {
+                $("[data-attribute='ProjectId']").select2({
+                    placeholder: 'Proje seçiniz',
+                    type: "GET",
+                    data: z,
+                });
+                $.ErcanAyhan.Server.PostAsync("", "/Work/GetUnitPersons?unitId=@Model.Task.UnitId", function (t) {
+                    $("[data-attribute='Assigned']").select2({
+                        placeholder: 'Atanacak Kişi seçiniz',
+                        type: "GET",
+                        data: t,
+                    });
+                });
+            });
+            </text>
+   }
+    else {
+      <text>
+            </text>
+    }
+        });
+        $.ErcanAyhan.Server.GetAsync("", "/Work/GetTaskHistory?taskId=" + "@Model.Task.Id", function (e) {
+            var html = "";
+            for (var i = 0; i < e.length; i++) {
+                html += i != 0 ? $("#history").html().replace(/##Assigned/g, $.ErcanAyhan.ToTitleCase(e[i].Assigned)).replace(/##TaskStatusName/g, e[i].TaskStatusName).
+                         replace(/##CreatedDate/g, e[i].CreatedDate).replace(/##CreatedBy/g, $.ErcanAyhan.ToTitleCase(e[i].CreatedBy)) : $("#history").html().replace(/##Assigned/g, $.ErcanAyhan.ToTitleCase(e[i].Assigned)).replace(/##TaskStatusName/g, e[i].TaskStatusName).
+                         replace(/##CreatedDate/g, e[i].CreatedDate).replace(/##CreatedBy/g, $.ErcanAyhan.ToTitleCase(e[i].CreatedBy)).replace("col-blue", "col-teal");
+            }
+            $("#history").html(e.length == 0 ? "" : html);
+        });
+        funcGetTaskComments();
+        function funcGetTaskComments() {
+            $.ErcanAyhan.Server.GetAsync("", "/Work/GetTaskComments?taskId=" + "@Model.Task.Id", function (t) {
+                var html = "";
+                for (var i = 0; i < t.length; i++) {
+                    html += $("#comments").html().replace("##FullName", t[i].FullName).replace("##Description", t[i].Comment).replace("##Date", t[i].NameDate);
+                }
+                $("#innerComment").html(t.length == 0 ? "" : html);
+            })
+        }
+        function funcInsertTaskComment(e, z) {
+            if (e != 0) {
+                $.ErcanAyhan.Server.Post({ TaskId: e, Description: $("#comment").val() }, "/Work/InsertTaskComment", function (t) {
+                    funcGetTaskComments();
+                    $("#comment").val("");
+                })
+            }
+        }
+        function textAreaAdjust(o) {
+            o.style.height = "1px";
+            o.style.height = (25 + o.scrollHeight) + "px";
+        }
+
+        function funcCreateTempMediaList(t) {
+            $.ErcanAyhan.Server.UploadAsync(t.files, '/Media/CreateTempMediaForTask', function (e) {
+                if (e.indexOf == undefined || e.indexOf("##") == -1) {
+                    $("#imgList").html("");
+                    var html = "";
+                    for (var i = 0; i < e.length; i++) {
+                        tempId++;
+                        html = ' <a href="/Media/PreviewWithName?id=' + (i + 1) + '&tempId=' + tempId + '&fileName=' + e[i].FileName + '" data-sub-html="' + e[i].FileName + '" ' + (e[i].ContentType.indexOf("image") == -1 ? 'data-iframe="true"' : '') + '>' +
+                      e[i].FileName +
+                      '</a><br/>';
+                        $("#imgList").append(html);
+                    }
+                } else {
+                    var rTextSplit = e.split("##");
+                    $.ErcanAyhan.Notify.Show(rTextSplit[1], rTextSplit[0], "warning")
+                }
+                $("#mediaSelect").val("")
+                $('#imgList').data('lightGallery').destroy(true);
+                $('#imgList').lightGallery({ thumbnail: false, selector: '#imgList a' });
+            })
+        }
+
+        //$('#imgList').lightGallery({ thumbnail: false, selector: '#imgList a' });
+        $("[data-attribute='TaskStatusId']").select2({ minimumResultsForSearch: Infinity });
+        @if (Model.Task.Id != 0) { <text> $("[data-attribute='TaskStatusId']").select2("val", "@Model.Task.TaskStatusId"); </text>  }
+
+        function funcUnitChange(e) {
+            $.ErcanAyhan.Server.PostAsync("", "/Work/GetUnitProjectList?unitId=" + e.value, function (t) {
+                if (t.length == 0) {
+                    waitingSeconds = 10000;
+                    $.ErcanAyhan.Notify.Show("Bilgilendirme", "Seçilen birime ait proje başlıkları tanımlanmamış.<br/>Birim Projeleri kısmından biriminize gelecek taleplere göre konularınızı belirleyiniz.", "info");
+                    waitingSeconds = 4000;
+                }
+                $("[data-attribute='ProjectId']").select2({
+                    placeholder: 'Birim seçiniz',
+                    type: "GET",
+                    data: t,
+                });
+                //$.ErcanAyhan.Server.PostAsync("", "/Work/GetUnitPersons?unitId=" + e.value, function (z) {
+                //    $("[data-attribute='Assigned']").select2({
+                //        placeholder: 'Atanacak Kişi seçiniz',
+                //        type: "GET",
+                //        data: z,
+                //    });
+                //});
+                $("[data-attribute='ProjectId']").select2("open")
+            });
+        }
+        function funcCopyTask() {
+            $('[data-attribute="Id"]').val(0);
+            $('[data-attribute="Description"]').val("");
+            $('[data-attribute="TaskStatusId"]').select2("val", "@Arch.Core.Enums.TaskStatusTypes.ToDo")
+            $('[data-attribute="RequestedDate"]').val('@DateTime.Now.ToString("yyy-MM-ddTHH:mm")');
+            $.ErcanAyhan.Notify.Show('Bu iş kopyalandı', '', 'success'); $('[data-model-url]').attr('data-model-url', '/Work/InsertTask');
+            $("#imgList").html("");
+            $('.card h2 b').html(' - Yeni Kayıt')
+        }
+    </script>
+}

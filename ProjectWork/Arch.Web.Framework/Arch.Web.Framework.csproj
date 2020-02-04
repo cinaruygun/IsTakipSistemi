@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F80E8E10-279A-46D1-8BE3-534454C70D5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arch.Web.Framework</RootNamespace>
+    <AssemblyName>Arch.Web.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\AdminController.cs" />
+    <Compile Include="Controller\PublicController.cs" />
+    <Compile Include="Controller\BaseController.cs" />
+    <Compile Include="Enums\ForbiddenAccessTypes.cs" />
+    <Compile Include="Enums\MessageTitleTypes.cs" />
+    <Compile Include="Enums\MessageTypes.cs" />
+    <Compile Include="Helpers\MailHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Accesses.cs" />
+    <Compile Include="System\CurrentValues.cs" />
+    <Compile Include="System\Resources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arch.Core\Arch.Core.csproj">
+      <Project>{615e64bf-9243-403c-94e8-a6a3a915e71b}</Project>
+      <Name>Arch.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arch.Data\Arch.Data.csproj">
+      <Project>{e20673a8-022b-41a4-ba73-0ff96d3e153f}</Project>
+      <Name>Arch.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arch.Dto\Arch.Dto.csproj">
+      <Project>{e1a4065f-c5e9-441b-ac06-e6e62bd0f96f}</Project>
+      <Name>Arch.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arch.Service\Arch.Service.csproj">
+      <Project>{9cdfc376-8071-4225-a9f7-9b161357adfa}</Project>
+      <Name>Arch.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arch.Utilities\Arch.Utilities.csproj">
+      <Project>{9b0c5e21-865c-4a61-8394-5a8aec0fc87a}</Project>
+      <Name>Arch.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

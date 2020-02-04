@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Ana Sayfa</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="/assets/css/materialize.css" rel="stylesheet" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/ercanayhan.min.css?v=1.0" rel="stylesheet" />
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body class="theme-light-blue">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Lütfen bekleyin...</p>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="/login/logout" class="waves-effect waves-block logout">
+                    <i class="material-icons">power_settings_new</i>
+                </a>
+                <a href="javascript:void(0);" class="bars" style="display: none;"></a>
+                <a class="navbar-brand waves-effect" href="/"><h1 class="padding-0 margin-0">İş Takip</h1></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="pull-right">
+                    <a href="/login/logout" class=" waves-effect waves-block m-r-15">
+                        <i class="material-icons" style="vertical-align: bottom;">power_settings_new</i>
+                        <span>Güvenli Çıkış</span>
+                    </a>
+                </li>
+            </ul>
+           
+        </div>
+    </nav>
+    <section>
+        <aside id="leftsidebar" class="sidebar">
+            <div class="user-info">
+                <div class="image">
+                    <div class="initials">@Accesses.Initials</div>
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">@Accesses.FullName</div>
+                    <div class="email">@Accesses.Email</div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="list" style="height:100%;">
+                    <li>
+                        <a href="/Dashboard">
+                            <i class="material-icons">home</i>
+                            <span>Ana sayfa</span>
+                        </a>
+                    </li>
+                    <li><a href="/Work/NewOrEdit"><i class="material-icons col-orange">assignment_ind</i><span>İş Ekle/Düzenle</span></a></li>
+                    <li><a href="/Work/Board"><i class="material-icons col-pink">assignment</i><span>İş Tablom</span></a></li>
+                    <li><a href="/Work"><i class="material-icons col-cyan">view_list</i><span>İş Listem</span></a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons col-teal">assignment_turned_in</i>
+                            <span>Raporlar</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li><a href="/Work/TaskFiguresReport">İş Dağılımı</a></li>
+                            <li><a href="/Work/TaskTracking">Personel İşleri İzleme</a></li>
+                            <li><a href="/Work/PersonTasksReport">Personel İşleri Raporu</a></li>
+                            <li><a href="/Work/WorkFlow">İş Geçmişi</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li><a href="/Work/UnitProject"><i class="material-icons col-purple">view_carousel</i><span>Birim Projeleri</span></a></li>
+                </ul>
+            </div>
+         
+        </aside>
+    </section>
+    <section class="content">
+        @RenderBody()
+    </section>
+    <div class="modal fade-scale" id="deleteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content modal-col-pink">
+                <div class="modal-header">
+                    <h4 class="modal-title">Silme işlemini yapmak istediğinize emin misiniz?</h4>
+                </div>
+                <div class="modal-footer p-t-0">
+                    <button id="DeleteAccept" type="button" class="btn btn-link waves-effect">Evet</button>
+                    <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">Hayır</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="/assets/js/growl.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="/assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+    <script src="/assets/js/ercanayhan.min.js?v=1.0"></script>
+    <script src="/assets/js/ercanayhan.admin.js?v=1.0"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

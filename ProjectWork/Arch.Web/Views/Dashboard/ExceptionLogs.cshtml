@@ -1,0 +1,181 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Hata Arşivi";
+}
+
+<style>
+    .filter .dropdown-menu ul.menu li {
+        padding: 10px;
+    }
+
+    .filter .body {
+        padding: 0px;
+    }
+
+    .select2-chosen {
+        margin: -5px;
+    }
+
+    .filter .input-group {
+        margin-bottom: 0;
+    }
+</style>
+<link href="/assets/plugins/Select2/select2.css" rel="stylesheet" />
+<div class="card">
+    <div class="header bg-blue">
+        <h2>
+            Hata Arşivi
+        </h2>
+        <ul class="header-dropdown m-r-0 icon-button-demo filter card-body">
+            <li>
+                <a class="btn bg-cyan waves-effect" href="javascript:void($('.k-grid-excel').click())">Excele Aktar</a>
+            </li>
+        </ul>
+    </div>
+    <div class="body" style="padding:0;">
+        <div id="grid"></div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="/assets/js/kendo.all.min.js"></script>
+    <script src="/assets/js/kendo.timezones.min.js"></script>
+    <script src="/assets/js/kendo.culture.tr-TR.min.js"></script>
+    <script src="/assets/js/kendo.messages.tr-TR.min.js"></script>
+    <link href="/assets/css/kendo.material.min.css" rel="stylesheet" />
+    <link href="/assets/css/kendo.common-material.min.css" rel="stylesheet" />
+    <link href="/assets/css/kendo.material.mobile.min.css" rel="stylesheet" />
+    <script src="/assets/js/jszip.min.js"></script>
+    <script src="/assets/plugins/Select2/select2.min.js"></script>
+    <style>
+        .demo-checkbox label, .demo-radio-button label {
+            min-width: inherit;
+            min-width: initial;
+        }
+
+        .k-grid-toolbar {
+            display: none;
+        }
+
+        #grid {
+            border-top: 1px solid #2092c9 !important;
+            border: none;
+        }
+
+        .col-md-x {
+            max-width: 750px;
+        }
+
+            .col-md-x .media:last-child {
+                padding-bottom: 10px;
+            }
+
+        .k-grid-header .k-header, .k-grid-header .k-header .k-link, .k-grid-header .k-link, .k-grid-header .k-link:link, .k-pager-info, .k-scheduler-agendaview .k-scheduler-datecolumn, .k-scheduler-header {
+            color: #555;
+            font-weight: bold !important;
+        }
+
+        .media-heading {
+            color: #2196f3 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .media {
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 0;
+            color: #555;
+            padding-bottom: 0;
+        }
+
+        .shadow {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .shadow-2 {
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        tr.k-detail-row.k-alt, .k-detail-row {
+            background-color: #efefef !important;
+        }
+
+        .k-scheduler-toolbar > ul:first-child {
+            float: none;
+        }
+
+        .k-scheduler-toolbar > ul {
+            float: none;
+            text-align: center;
+        }
+
+        .k-button, .k-calendar .k-footer, .k-calendar .k-header .k-link {
+            text-transform: none;
+        }
+
+        .k-grid td {
+            padding: 3px;
+        }
+
+        .k-header.k-grid-toolbar {
+            border-color: #33a9d5;
+        }
+
+        .k-grouping-header .k-group-indicator, .k-pivot-toolbar .k-button {
+            border-color: #33a9d5;
+        }
+
+        .k-grouping-header .k-group-indicator, .k-pivot-toolbar .k-button,
+        .k-block, .k-button, .k-draghandle, .k-grouping-header, .k-header.k-grid-toolbar,
+        .k-header, .k-toolbar, .k-treemap-tile, html .km-pane-wrapper .k-header {
+            background-color: #2196F3;
+        }
+
+        .k-grid-toolbar {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .media .media-body .media-heading {
+            font-size: 14px;
+        }
+
+        .k-grid td {
+            line-height: 1.2em;
+        }
+
+        .k-dirty {
+            border-style: none;
+        }
+    </style>
+    <script>
+        kendo.culture("tr-TR");
+        var isFirstOne = false;
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "/Dashboard/GetExceptionLogs",
+                    dataType: "json",
+                },
+            },
+            pageSize: 20,
+        });
+
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            sortable: true,
+            navigatable: true,
+            scrollable: true,
+            @if(!Request.Browser.IsMobileDevice)
+                {
+                 <text>height: (window.innerHeight - 150),</text>
+                }
+            pageable: {
+                refresh: true,
+                pageSizes: [20, 50, 100, 250, 1000],
+            },
+        });
+    </script>
+} 

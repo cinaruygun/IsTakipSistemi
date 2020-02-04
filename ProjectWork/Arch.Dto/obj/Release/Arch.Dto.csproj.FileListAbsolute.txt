@@ -1,0 +1,8 @@
+D:\Egitim\ProjectWork\Arch.Dto\bin\Release\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Dto\bin\Release\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Dto\bin\Release\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Dto\bin\Release\Newtonsoft.Json.dll
+D:\Egitim\ProjectWork\Arch.Dto\bin\Release\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Dto\obj\Release\Arch.Dto.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Dto\obj\Release\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Dto\obj\Release\Arch.Dto.pdb

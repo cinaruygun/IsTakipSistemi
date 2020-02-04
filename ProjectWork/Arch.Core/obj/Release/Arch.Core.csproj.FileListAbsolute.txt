@@ -1,0 +1,5 @@
+D:\Egitim\ProjectWork\Arch.Core\bin\Release\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Core\bin\Release\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Core\obj\Release\Arch.Core.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Core\obj\Release\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Core\obj\Release\Arch.Core.pdb

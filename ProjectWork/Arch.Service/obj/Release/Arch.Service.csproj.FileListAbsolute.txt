@@ -1,0 +1,17 @@
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Service.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Service.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Data.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Utilities.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\EntityFramework.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Newtonsoft.Json.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Data.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\Arch.Utilities.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Release\EntityFramework.xml
+D:\Egitim\ProjectWork\Arch.Service\obj\Release\Arch.Service.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Service\obj\Release\Arch.Service.dll
+D:\Egitim\ProjectWork\Arch.Service\obj\Release\Arch.Service.pdb

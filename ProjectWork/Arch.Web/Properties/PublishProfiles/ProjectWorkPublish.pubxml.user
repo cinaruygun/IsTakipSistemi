@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Publishes\ProjectWork</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Assets/css/ercanayhan.min.css">
+      <publishTime>08/05/2017 13:13:56</publishTime>
+    </File>
+    <File Include="Assets/css/fonts/DejaVu/DejaVuSans-Bold.ttf">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/css/fonts/DejaVu/DejaVuSans.ttf">
+      <publishTime>07/27/2017 00:12:07</publishTime>
+    </File>
+    <File Include="Assets/css/fonts/glyphs/WebComponentsIcons.ttf">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/css/images/kendoui.ttf">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/css/images/kendoui.woff">
+      <publishTime>07/27/2017 00:12:06</publishTime>
+    </File>
+    <File Include="Assets/css/images/loading-image.gif">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/css/kendo.common-material.min.css">
+      <publishTime>07/27/2017 00:12:06</publishTime>
+    </File>
+    <File Include="Assets/css/kendo.material.min.css">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/css/kendo.material.mobile.min.css">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/css/Material/loading-image.gif">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/css/materialize.css">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/Documents/Ornek_Elektrik_Faturasi.xlsx">
+      <publishTime>07/27/2017 00:12:05</publishTime>
+    </File>
+    <File Include="Assets/fonts/MaterialIcons-Regular.eot">
+      <publishTime>07/27/2017 00:12:07</publishTime>
+    </File>
+    <File Include="Assets/fonts/MaterialIcons-Regular.ijmap">
+      <publishTime>07/27/2017 00:12:07</publishTime>
+    </File>
+    <File Include="Assets/fonts/MaterialIcons-Regular.svg">
+      <publishTime>07/27/2017 00:12:08</publishTime>
+    </File>
+    <File Include="Assets/fonts/MaterialIcons-Regular.ttf">
+      <publishTime>07/27/2017 00:12:07</publishTime>
+    </File>
+    <File Include="Assets/fonts/MaterialIcons-Regular.woff">
+      <publishTime>07/27/2017 00:12:07</publishTime>
+    </File>
+    <File Include="Assets/fonts/MaterialIcons-Regular.woff2">
+      <publishTime>07/27/2017 00:12:07</publishTime>
+    </File>
+    <File Include="Assets/images/bg.jpg">
+      <publishTime>08/05/2017 13:17:10</publishTime>
+    </File>
+    <File Include="Assets/images/error.png">
+      <publishTime>07/27/2017 00:12:07</publishTime>
+    </File>
+    <File Include="Assets/images/favicon.ico">
+      <publishTime>07/30/2017 13:05:38</publishTime>
+    </File>
+    <File Include="Assets/images/user.png">
+      <publishTime>07/29/2017 18:16:22</publishTime>
+    </File>
+    <File Include="Assets/js/ercanayhan.admin.js">
+      <publishTime>08/06/2017 15:10:57</publishTime>
+    </File>
+    <File Include="Assets/js/ercanayhan.min.js">
+      <publishTime>07/29/2017 20:35:22</publishTime>
+    </File>
+    <File Include="Assets/js/growl.js">
+      <publishTime>07/27/2017 00:12:08</publishTime>
+    </File>
+    <File Include="Assets/js/jszip.min.js">
+      <publishTime>07/27/2017 00:12:08</publishTime>
+    </File>
+    <File Include="Assets/js/kendo.all.min.js">
+      <publishTime>07/27/2017 00:12:10</publishTime>
+    </File>
+    <File Include="Assets/js/kendo.culture.tr-TR.min.js">
+      <publishTime>07/27/2017 00:12:08</publishTime>
+    </File>
+    <File Include="Assets/js/kendo.messages.tr-TR.min.js">
+      <publishTime>07/27/2017 00:12:08</publishTime>
+    </File>
+    <File Include="Assets/js/kendo.timezones.min.js">
+      <publishTime>07/27/2017 00:12:09</publishTime>
+    </File>
+    <File Include="Assets/js/moment-with-langs.js">
+      <publishTime>07/27/2017 00:12:09</publishTime>
+    </File>
+    <File Include="Assets/js/moment-with-locales.js">
+      <publishTime>07/27/2017 00:12:09</publishTime>
+    </File>
+    <File Include="Assets/js/morris.js">
+      <publishTime>07/27/2017 00:12:09</publishTime>
+    </File>
+    <File Include="Assets/js/push.min.js">
+      <publishTime>07/27/2017 00:12:09</publishTime>
+    </File>
+    <File Include="Assets/js/raphael.min.js">
+      <publishTime>07/27/2017 00:12:09</publishTime>
+    </File>
+    <File Include="Assets/plugins/animate-css/animate.css">
+      <publishTime>07/29/2017 20:31:52</publishTime>
+    </File>
+    <File Include="Assets/plugins/animate-css/animate.min.css">
+      <publishTime>07/27/2017 00:12:11</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput-angular.js">
+      <publishTime>07/27/2017 00:12:13</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput-angular.min.js">
+      <publishTime>07/27/2017 00:12:13</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput-typeahead.css">
+      <publishTime>07/27/2017 00:12:13</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+      <publishTime>07/27/2017 00:12:13</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js">
+      <publishTime>07/27/2017 00:12:13</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js">
+      <publishTime>07/27/2017 00:12:13</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/css/bootstrap-theme.css">
+      <publishTime>07/27/2017 00:12:11</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>07/27/2017 00:12:11</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/css/bootstrap.css">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/css/bootstrap.min.css">
+      <publishTime>07/27/2017 00:12:11</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/js/bootstrap.js">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/js/bootstrap.min.js">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/bootstrap/js/npm.js">
+      <publishTime>07/27/2017 00:12:12</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/inputmask/inputmask.date.extensions.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/inputmask/inputmask.dependencyLib.jquery.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/inputmask/inputmask.extensions.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/inputmask/inputmask.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/inputmask/inputmask.numeric.extensions.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/inputmask/inputmask.phone.extensions.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/inputmask/inputmask.regex.extensions.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/inputmask/jquery.inputmask.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js">
+      <publishTime>07/27/2017 00:12:17</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery/jquery.js">
+      <publishTime>07/27/2017 00:12:16</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery/jquery.min.js">
+      <publishTime>07/27/2017 00:12:16</publishTime>
+    </File>
+    <File Include="Assets/plugins/jquery/jquery.min.map">
+      <publishTime>07/27/2017 00:12:16</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/css/lg-fb-comment-box.css">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/css/lg-fb-comment-box.min.css">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/css/lg-transitions.css">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/css/lg-transitions.min.css">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/css/lightgallery.css">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/css/lightgallery.min.css">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/fonts/lg.eot">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/fonts/lg.svg">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/fonts/lg.ttf">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/fonts/lg.woff">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/img/loading.gif">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/img/video-play.png">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/img/vimeo-play.png">
+      <publishTime>07/27/2017 00:12:19</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/img/youtube-play.png">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-autoplay.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-autoplay.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-fullscreen.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-fullscreen.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-hash.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-hash.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-pager.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-pager.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-thumbnail.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-thumbnail.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-video.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-video.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-zoom.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lg-zoom.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lightgallery-all.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lightgallery-all.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lightgallery.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/light-gallery/js/lightgallery.min.js">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/material-design-iconic-font/css/material-design-iconic-font.css">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/material-design-iconic-font/css/material-design-iconic-font.min.css">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/css/materialize.css">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/css/materialize.min.css">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Bold.eot">
+      <publishTime>07/27/2017 00:12:20</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Bold.ttf">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Bold.woff">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Bold.woff2">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Light.eot">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Light.ttf">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Light.woff">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Light.woff2">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Medium.eot">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Medium.ttf">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Medium.woff">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Medium.woff2">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Regular.eot">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Regular.ttf">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Regular.woff">
+      <publishTime>07/27/2017 00:12:21</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Regular.woff2">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Thin.eot">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Thin.ttf">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Thin.woff">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/fonts/roboto/Roboto-Thin.woff2">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/js/materialize.js">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/materialize-css/js/materialize.min.js">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/momentjs/ender.js">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/momentjs/moment.js">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/momentjs/package.js">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/morrisjs/Gruntfile.js">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/morrisjs/morris.css">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/morrisjs/morris.js">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/morrisjs/morris.min.js">
+      <publishTime>07/27/2017 00:12:22</publishTime>
+    </File>
+    <File Include="Assets/plugins/raphael/Gruntfile.js">
+      <publishTime>07/27/2017 00:12:23</publishTime>
+    </File>
+    <File Include="Assets/plugins/raphael/raphael.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/raphael/raphael.min.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/raphael/raphael.no-deps.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/raphael/raphael.no-deps.min.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/raphael/webpack.config.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/Select2/select2-spinner.gif">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/Select2/select2.css">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/Select2/select2.min.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/Select2/select2.png">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/Select2/select2x2.png">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/bower.json">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/changelog.txt">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/composer.json">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/jquery.tinymce.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/jquery.tinymce.min.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/langs/tr.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/license.txt">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/package.json">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/advlist/plugin.js">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/advlist/plugin.min.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/anchor/plugin.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/anchor/plugin.min.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/autolink/plugin.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/autolink/plugin.min.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/autoresize/plugin.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/autoresize/plugin.min.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/autosave/plugin.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/autosave/plugin.min.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/bbcode/plugin.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/bbcode/plugin.min.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/charmap/plugin.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/charmap/plugin.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/code/plugin.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/code/plugin.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/codesample/css/prism.css">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/codesample/plugin.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/codesample/plugin.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/colorpicker/plugin.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/colorpicker/plugin.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/contextmenu/plugin.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/contextmenu/plugin.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/directionality/plugin.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/directionality/plugin.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-cool.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-cry.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-embarassed.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-frown.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-innocent.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-kiss.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-laughing.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-money-mouth.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-sealed.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-smile.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-surprised.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-tongue-out.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-undecided.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-wink.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/img/smiley-yell.gif">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/plugin.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/emoticons/plugin.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/fullpage/plugin.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/fullpage/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/fullscreen/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/fullscreen/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/hr/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/hr/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/image/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/image/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/imagetools/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/imagetools/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/importcss/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/importcss/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/insertdatetime/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/insertdatetime/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/layer/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/layer/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/legacyoutput/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/legacyoutput/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/link/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/link/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/lists/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/lists/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/media/moxieplayer.swf">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/media/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/media/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/nonbreaking/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/nonbreaking/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/noneditable/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/noneditable/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/pagebreak/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/pagebreak/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/paste/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/paste/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/preview/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/preview/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/print/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/print/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/save/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/save/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/searchreplace/plugin.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/searchreplace/plugin.min.js">
+      <publishTime>07/27/2017 00:12:27</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/spellchecker/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/spellchecker/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/tabfocus/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/tabfocus/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/table/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/table/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/template/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/template/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/textcolor/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/textcolor/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/textpattern/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/textpattern/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/visualblocks/css/visualblocks.css">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/visualblocks/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/visualblocks/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/visualchars/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/visualchars/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/wordcount/plugin.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/plugins/wordcount/plugin.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/readme.md">
+      <publishTime>07/27/2017 00:12:24</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/content.inline.min.css">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/content.min.css">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/fonts/tinymce-small.eot">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/fonts/tinymce-small.svg">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/fonts/tinymce-small.ttf">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/fonts/tinymce-small.woff">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/fonts/tinymce.eot">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/fonts/tinymce.svg">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/fonts/tinymce.ttf">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/fonts/tinymce.woff">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/img/anchor.gif">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/img/loader.gif">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/img/object.gif">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/img/trans.gif">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/skin.ie7.min.css">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/skins/lightgray/skin.min.css">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/themes/inlite/theme.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/themes/inlite/theme.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/themes/modern/theme.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/themes/modern/theme.min.js">
+      <publishTime>07/27/2017 00:12:28</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/tinymce.jquery.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/tinymce.jquery.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/tinymce.js">
+      <publishTime>07/27/2017 00:12:25</publishTime>
+    </File>
+    <File Include="Assets/plugins/tinymce/tinymce.min.js">
+      <publishTime>07/27/2017 00:12:26</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>07/27/2017 00:12:39</publishTime>
+    </File>
+    <File Include="bin/Arch.Core.dll">
+      <publishTime>08/06/2017 17:58:17</publishTime>
+    </File>
+    <File Include="bin/Arch.Data.dll">
+      <publishTime>08/06/2017 17:58:18</publishTime>
+    </File>
+    <File Include="bin/Arch.Dto.dll">
+      <publishTime>08/06/2017 17:58:18</publishTime>
+    </File>
+    <File Include="bin/Arch.IoC.dll">
+      <publishTime>08/06/2017 17:58:20</publishTime>
+    </File>
+    <File Include="bin/Arch.Service.dll">
+      <publishTime>08/06/2017 17:58:19</publishTime>
+    </File>
+    <File Include="bin/Arch.Utilities.dll">
+      <publishTime>08/06/2017 17:58:19</publishTime>
+    </File>
+    <File Include="bin/Arch.Web.dll">
+      <publishTime>08/06/2017 17:58:23</publishTime>
+    </File>
+    <File Include="bin/Arch.Web.Framework.dll">
+      <publishTime>08/06/2017 17:58:21</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>07/27/2017 00:12:46</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>07/27/2017 00:12:45</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>07/27/2017 00:12:50</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>07/27/2017 00:13:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>07/27/2017 00:12:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.Configuration.dll">
+      <publishTime>07/27/2017 00:13:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.dll">
+      <publishTime>07/27/2017 00:13:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.Unity.RegistrationByConvention.dll">
+      <publishTime>07/27/2017 00:13:25</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/27/2017 00:13:07</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>07/27/2017 00:12:40</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.dll">
+      <publishTime>07/27/2017 00:13:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/27/2017 00:13:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/27/2017 00:13:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>07/27/2017 00:13:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>07/27/2017 00:13:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/27/2017 00:13:05</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/27/2017 00:13:05</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/27/2017 00:13:05</publishTime>
+    </File>
+    <File Include="bin/Unity.Mvc5.dll">
+      <publishTime>07/27/2017 00:13:29</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>07/27/2017 00:13:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/27/2017 00:12:04</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/27/2017 00:12:04</publishTime>
+    </File>
+    <File Include="Views/Dashboard/ExceptionLogs.cshtml">
+      <publishTime>07/30/2017 14:30:31</publishTime>
+    </File>
+    <File Include="Views/Dashboard/Index.cshtml">
+      <publishTime>08/06/2017 15:14:30</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>08/06/2017 13:51:20</publishTime>
+    </File>
+    <File Include="Views/Shared/EmailTemplate/TaskComment.html">
+      <publishTime>08/05/2017 12:38:51</publishTime>
+    </File>
+    <File Include="Views/Shared/EmailTemplate/TaskDetailEmail.html">
+      <publishTime>08/05/2017 12:38:51</publishTime>
+    </File>
+    <File Include="Views/Shared/EmailTemplate/TaskDoneEmail.html">
+      <publishTime>08/05/2017 12:38:49</publishTime>
+    </File>
+    <File Include="Views/Shared/Tools/KendoScripts.cshtml">
+      <publishTime>07/27/2017 00:12:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/06/2017 15:12:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_Login_Layout.cshtml">
+      <publishTime>07/30/2017 14:54:22</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/27/2017 00:12:29</publishTime>
+    </File>
+    <File Include="Views/Work/Board.cshtml">
+      <publishTime>08/06/2017 16:57:00</publishTime>
+    </File>
+    <File Include="Views/Work/Index.cshtml">
+      <publishTime>08/06/2017 16:31:02</publishTime>
+    </File>
+    <File Include="Views/Work/NewOrEdit.cshtml">
+      <publishTime>08/05/2017 11:30:14</publishTime>
+    </File>
+    <File Include="Views/Work/PersonTasksReport.cshtml">
+      <publishTime>08/05/2017 12:02:47</publishTime>
+    </File>
+    <File Include="Views/Work/TaskFiguresReport.cshtml">
+      <publishTime>08/05/2017 12:02:22</publishTime>
+    </File>
+    <File Include="Views/Work/TaskTracking.cshtml">
+      <publishTime>08/05/2017 11:53:16</publishTime>
+    </File>
+    <File Include="Views/Work/UnitProject.cshtml">
+      <publishTime>08/06/2017 17:25:52</publishTime>
+    </File>
+    <File Include="Views/Work/WorkFlow.cshtml">
+      <publishTime>08/05/2017 20:59:03</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/27/2017 00:12:29</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/06/2017 17:58:24</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

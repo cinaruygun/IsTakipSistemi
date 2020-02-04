@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>@{var ac = Accesses.IsLogin(); if (ac!= Arch.Web.Framework.Enums.ForbiddenAccessTypes.IsLogout && ac == Arch.Web.Framework.Enums.ForbiddenAccessTypes.UnForbidden) { Response.Redirect(Arch.Core.Constants.StaticParams.Dashboard); }}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@ViewBag.Title | Portal</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="/assets/css/materialize.css" rel="stylesheet" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/ercanayhan.min.css?v=1.0" rel="stylesheet" />
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+</head>
+<body class="@ViewBag.BodyClassName">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Lütfen bekleyin...</p>
+        </div>
+    </div>
+    <div class="overlay"></div>
+            @RenderBody()
+    <script src="/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="/assets/js/growl.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="/assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+    <script src="/assets/js/ercanayhan.min.js?v=1.0"></script>
+    <script src="/assets/js/ercanayhan.admin.js?v=1.0"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

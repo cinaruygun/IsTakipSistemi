@@ -1,0 +1,21 @@
+D:\Egitim\ProjectMaskiPortal\Arch.Core\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Core\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Core\obj\Debug\Arch.Core.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectMaskiPortal\Arch.Core\obj\Debug\Arch.Core.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Core\obj\Debug\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.Core\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectPortal\Arch.Core\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.Core\obj\Debug\Arch.Core.dll
+D:\Egitim\ProjectPortal\Arch.Core\obj\Debug\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.Core\obj\Debug\Arch.Core.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Core\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Core\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Core\obj\Debug\Arch.Core.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Core\obj\Debug\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Core\obj\Debug\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Core\bin\Debug\Arch.Core.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Core\bin\Debug\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Core\obj\Debug\Arch.Core.csprojAssemblyReference.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Core\obj\Debug\Arch.Core.csproj.CoreCompileInputs.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Core\obj\Debug\Arch.Core.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Core\obj\Debug\Arch.Core.pdb

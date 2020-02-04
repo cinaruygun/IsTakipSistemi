@@ -1,0 +1,58 @@
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\Arch.Data.dll.config
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\EntityFramework.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Data\obj\Debug\Arch.Data.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectMaskiPortal\Arch.Data\obj\Debug\Arch.Data.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Data\obj\Debug\Arch.Data.pdb
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\Arch.Data.dll.config
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\EntityFramework.xml
+D:\Egitim\ProjectPortal\Arch.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Egitim\ProjectPortal\Arch.Data\obj\Debug\Arch.Data.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectPortal\Arch.Data\obj\Debug\Arch.Data.dll
+D:\Egitim\ProjectPortal\Arch.Data\obj\Debug\Arch.Data.pdb
+D:\Egitim\ProjectWork\Arch.Data\obj\Debug\Arch.Data.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Data\obj\Debug\Arch.Data.dll
+D:\Egitim\ProjectWork\Arch.Data\obj\Debug\Arch.Data.pdb
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\Arch.Data.dll.config
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\EntityFramework.xml
+D:\Egitim\ProjectWork\Arch.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\Arch.Data.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\Arch.Data.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\Arch.Data.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\Arch.Core.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\EntityFramework.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\EntityFramework.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\obj\Debug\Arch.Data.csprojAssemblyReference.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\obj\Debug\Arch.Data.csproj.CoreCompileInputs.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\obj\Debug\Arch.Data.csproj.CopyComplete
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\obj\Debug\Arch.Data.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Data\obj\Debug\Arch.Data.pdb

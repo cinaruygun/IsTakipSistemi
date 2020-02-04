@@ -1,0 +1,154 @@
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.IoC.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.IoC.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Service.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\System.Web.Helpers.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\System.Web.Mvc.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Unity.Mvc5.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.WebService.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\System.Web.WebPages.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Service.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\System.Web.Helpers.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\System.Web.Mvc.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\EntityFramework.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\Arch.WebService.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\System.Web.WebPages.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\obj\Debug\Arch.IoC.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\obj\Debug\Arch.IoC.dll
+D:\Egitim\ProjectMaskiPortal\Arch.IoC\obj\Debug\Arch.IoC.pdb
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.IoC.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.IoC.pdb
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Service.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\System.Web.Helpers.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\System.Web.Mvc.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Unity.Mvc5.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\System.Web.WebPages.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Service.pdb
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\System.Web.Helpers.xml
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\System.Web.Mvc.xml
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\EntityFramework.xml
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\System.Web.WebPages.xml
+D:\Egitim\ProjectPortal\Arch.IoC\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Egitim\ProjectPortal\Arch.IoC\obj\Debug\Arch.IoC.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectPortal\Arch.IoC\obj\Debug\Arch.IoC.dll
+D:\Egitim\ProjectPortal\Arch.IoC\obj\Debug\Arch.IoC.pdb
+D:\Egitim\ProjectWork\Arch.IoC\obj\Debug\Arch.IoC.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.IoC\obj\Debug\Arch.IoC.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.IoC.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.IoC.pdb
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Service.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\System.Web.Helpers.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\System.Web.Mvc.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Unity.Mvc5.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\System.Web.WebPages.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Service.pdb
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\System.Web.Helpers.xml
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\System.Web.Mvc.xml
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\EntityFramework.xml
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\System.Web.WebPages.xml
+D:\Egitim\ProjectWork\Arch.IoC\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Egitim\ProjectWork\Arch.IoC\obj\Debug\Arch.IoC.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.IoC.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.IoC.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Core.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Data.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Service.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\System.Web.Helpers.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\System.Web.Mvc.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Unity.Mvc5.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\EntityFramework.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Dto.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Utilities.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\System.Web.WebPages.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Data.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Data.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Service.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\System.Web.Helpers.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\System.Web.Mvc.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\EntityFramework.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Dto.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Utilities.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\Arch.Utilities.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\System.Web.WebPages.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\obj\Debug\Arch.IoC.csprojAssemblyReference.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\obj\Debug\Arch.IoC.csproj.CoreCompileInputs.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\obj\Debug\Arch.IoC.csproj.CopyComplete
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\obj\Debug\Arch.IoC.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.IoC\obj\Debug\Arch.IoC.pdb

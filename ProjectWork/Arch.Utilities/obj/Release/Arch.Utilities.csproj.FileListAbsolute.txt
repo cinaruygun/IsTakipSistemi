@@ -1,0 +1,11 @@
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Release\Arch.Utilities.dll.config
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Release\Arch.Utilities.dll
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Release\Arch.Utilities.pdb
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Release\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Release\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Release\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Release\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Utilities\bin\Release\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Utilities\obj\Release\Arch.Utilities.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Utilities\obj\Release\Arch.Utilities.dll
+D:\Egitim\ProjectWork\Arch.Utilities\obj\Release\Arch.Utilities.pdb

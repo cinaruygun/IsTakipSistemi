@@ -1,0 +1,73 @@
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Service.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Service.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.WebService.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\Arch.WebService.pdb
+D:\Egitim\ProjectMaskiPortal\Arch.Service\bin\Debug\EntityFramework.xml
+D:\Egitim\ProjectMaskiPortal\Arch.Service\obj\Debug\Arch.Service.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectMaskiPortal\Arch.Service\obj\Debug\Arch.Service.dll
+D:\Egitim\ProjectMaskiPortal\Arch.Service\obj\Debug\Arch.Service.pdb
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Service.dll
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Service.pdb
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectPortal\Arch.Service\bin\Debug\EntityFramework.xml
+D:\Egitim\ProjectPortal\Arch.Service\obj\Debug\Arch.Service.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectPortal\Arch.Service\obj\Debug\Arch.Service.dll
+D:\Egitim\ProjectPortal\Arch.Service\obj\Debug\Arch.Service.pdb
+D:\Egitim\ProjectWork\Arch.Service\obj\Debug\Arch.Service.csprojResolveAssemblyReference.cache
+D:\Egitim\ProjectWork\Arch.Service\obj\Debug\Arch.Service.dll
+D:\Egitim\ProjectWork\Arch.Service\obj\Debug\Arch.Service.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Service.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Service.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Core.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Data.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Dto.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Utilities.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\EntityFramework.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Newtonsoft.Json.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Core.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Data.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Dto.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\Arch.Utilities.pdb
+D:\Egitim\ProjectWork\Arch.Service\bin\Debug\EntityFramework.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Service.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Service.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Core.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Data.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Dto.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Utilities.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\EntityFramework.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Core.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Data.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Data.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Dto.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Utilities.pdb
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\Arch.Utilities.dll.config
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\bin\Debug\EntityFramework.xml
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\obj\Debug\Arch.Service.csprojAssemblyReference.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\obj\Debug\Arch.Service.csproj.CoreCompileInputs.cache
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\obj\Debug\Arch.Service.csproj.CopyComplete
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\obj\Debug\Arch.Service.dll
+C:\Users\cinar\Desktop\Yeni klasör (5)\ProjectWork\Arch.Service\obj\Debug\Arch.Service.pdb

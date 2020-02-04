@@ -1,0 +1,414 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "İş İzleme";
+}
+<link href="/assets/plugins/light-gallery/css/lightgallery.css" rel="stylesheet">
+<style>
+    .media-id:hover {
+        color: #00bcd4;
+    }
+
+    .task-content {
+        padding: 5px;
+    }
+    /*.slimScrollDiv, .task-content {
+        overflow: visible !important;
+    }*/
+
+    .card {
+        margin-bottom: 5px;
+        background: none !important;
+    }
+
+    .b-all {
+        border: 1px solid #dedede;
+        padding: 2px;
+    }
+
+    .other-tools {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    h5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .drag-over {
+        border: 2px dotted #555;
+        border-top: none;
+    }
+
+    /*.bg-drag {
+        background-color: rgba(0, 188, 212, 0.18) !important;
+    }*/
+    ul.status {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        list-style: none;
+    }
+
+    .todo .media {
+        border-left: 5px solid #e91e63;
+    }
+
+    .inprogress .media {
+        border-left: 5px solid #00bcd4;
+    }
+
+    .done .media {
+        border-left: 5px solid #4caf50;
+    }
+
+    .media {
+        position: relative;
+        overflow: visible;
+    }
+
+    .status a {
+        color: #555;
+    }
+
+    .status .material-icons {
+        font-size: 20px;
+    }
+
+    .filter .dropdown-menu ul.menu li a {
+        padding: 3px 0 0px 12px;
+    }
+
+    button:hover, button:focus {
+        color: white !important;
+    }
+
+    .filter .dropdown-menu ul.menu li {
+        padding: 10px;
+    }
+
+    .filter .input-group {
+        margin-bottom: 0;
+    }
+
+    .filter * {
+        list-style: none;
+    }
+</style>
+<link href="/assets/plugins/Select2/select2.css" rel="stylesheet" />
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="header bg-pink">
+            <h2>
+                Yapılacaklar<small class="requestedByName">Talep Eden: @Accesses.FullName</small>
+            </h2>
+            <ul class="header-dropdown m-r-0">
+                <li class="dropdown">
+                    <a href="/Work" class="dropdown-toggle waves-white waves-effect col-white" data-loading="cardloading">
+                        <div id="todoCount"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="task-content todo" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" ondragleave="DragLeave(event, this)" data-taskstatusid="@Arch.Core.Enums.TaskStatusTypes.ToDo">
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="header bg-cyan">
+            <h2>
+                Devam Edenler<small class="requestedByName">Talep Eden: @Accesses.FullName</small>
+            </h2>
+            <ul class="header-dropdown m-r-0">
+                <li class="dropdown">
+                    <a href="/Work" class="dropdown-toggle waves-white waves-effect col-white" data-loading="cardloading">
+                        <div id="inProgressCount"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="task-content inprogress" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" ondragleave="DragLeave(event, this)" data-taskstatusid="@Arch.Core.Enums.TaskStatusTypes.InProgress">
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="header bg-green">
+            <h2>
+                Tamamlananlar<small class="requestedByName">Talep Eden: @Accesses.FullName</small>
+            </h2>
+            <ul class="header-dropdown m-r-0">
+                <li class="dropdown">
+                    <a href="/Work" class="dropdown-toggle waves-white waves-effect col-white" data-loading="cardloading">
+                        <div id="doneCount"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="task-content done" ondrop="drop(event, this)" ondragover="allowDrop(event, this)" ondragleave="DragLeave(event, this)" data-taskstatusid="@Arch.Core.Enums.TaskStatusTypes.Done">
+    </div>
+</div>
+<div id="taskCard" class="hidden">
+    <div class="media shadow bg-white padding-10 p-b-5 p-t-5" draggable="true" ondragstart="drag(this)" data-taskid="##taskId" data-taskstatusid="##taskStatusId">
+        <ul class="status m-r--5">
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                    <i class="material-icons">more_vert</i>
+                </a>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="javascript:void(0);" onclick="funcInsertTaskHistory('##taskId', @Arch.Core.Enums.TaskStatusTypes.ToDo,'##taskStatusId')" class=" waves-effect waves-block">Yapılacak</a></li>
+                    <li><a href="javascript:void(0);" onclick="funcInsertTaskHistory('##taskId', @Arch.Core.Enums.TaskStatusTypes.InProgress,'##taskStatusId')" class=" waves-effect waves-block">Devam Ediyor</a></li>
+                    <li><a href="javascript:void(0);" onclick="funcInsertTaskHistory('##taskId', @Arch.Core.Enums.TaskStatusTypes.Done,'##taskStatusId')" class=" waves-effect waves-block">Tamamlandı</a></li>
+                    <li><a href="javascript:void(0);" onclick="funcInsertTaskHistory('##taskId', @Arch.Core.Enums.TaskStatusTypes.Removed,'##taskStatusId')" class=" waves-effect waves-block">Kaldırıldı</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="media-body">
+            <h5>
+                <a href="/Work/NewOrEdit?Id=##taskId" class="p-b-5">##Title</a>
+                <br /><small class="m-t-5"><b>##RequestedDate</b></small>
+            </h5>
+            @*##Description*@
+            <div class="other-tools pull-right">
+                <b class="##bgColor p-5">##ProjectName</b>
+                @*<b class="##bgColor p-5">##RequestedBy</b>*@
+            </div>
+            <h4 class="media-heading col-blue-grey m-b-0 m-t-10">
+                <b class="##bgColor p-5 circle m-r-5">##Initials</b>##Assigned
+            </h4>
+        </div>
+    </div>
+</div>
+<ul class="header-dropdown m-r-0 icon-button-demo filter card-body" style="position: fixed;bottom:30px;right: 50px;z-index:12; list-style:none;">
+    <li>
+        <a class="btn bg-orange waves-effect waves-float " data-toggle="dropdown" role="button" id="filtreOpen">
+            Filtreyi Aç
+        </a>
+        <ul class="dropdown-menu" style="position:relative;">
+            <li class="header">Filtreleme Seçenekleri</li>
+            <li class="body">
+                <ul class="menu tasks">
+                    <li>
+                        <input class="form-control" data-attribute="Assigned" value="@ViewBag.PersonId" />
+                    </li>
+                    <li>
+                        <input class="form-control" data-attribute="RequestedBy" />
+                    </li>
+                    <li>
+                        <input class="form-control" data-attribute="UnitId" value="@Accesses.UnitId" />
+                    </li>
+                    <li>
+                        <div class="input-group">
+                            <div class="form-line">
+                                <input type="text" class="form-control" data-attribute="Title" placeholder="Başlık" />
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-group">
+                            <div class="form-line">
+                                <input type="text" data-attribute="TaskId" class="form-control" placeholder="İş No">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <select data-attribute="TaskStatusId" class="form-control">
+                            <option value="-1" selected>Tüm İşler</option>
+                            <option value="">Devam Ediyor ve Yapılacak</option>
+                            <option value="36">Yapılacak</option>
+                            <option value="37">Devam Ediyor</option>
+                            <option value="38">Tamamlandı</option>
+                           @* <option value="39">Kaldırıldı</option>*@
+                        </select>
+                    </li>
+                    <li>
+                        <button type="button" class="btn bg-orange waves-effect waves-float pull-left" onclick="funcGetFilterableTasks()">Filtrele</button>
+                        <button type="button" class="btn bg-red waves-effect waves-float pull-right" onclick="SetValue(null); funcClearTaskFilter();" data-loading="cardloading">Filtreyi Kaldır</button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+@section scripts{
+    @*<script src="/assets/js/samples/ui/tooltips-popovers.js"></script>*@
+    <script src="/assets/plugins/light-gallery/js/lightgallery-all.js"></script>
+    <script src="/assets/plugins/Select2/select2.min.js"></script>
+    <script>
+        function funcGetFilterableTasks() {
+            @if (ViewBag.TaskStatusId != null)
+        {
+            <text>$("[data-attribute='TaskStatusId']").val("@ViewBag.TaskStatusId");</text>
+        }
+            var parameters = "?assigned=" + $("[data-attribute='Assigned']").val() + "&requestedBy=" + $("[data-attribute='RequestedBy']").val() +
+                "&unitId=" + $("[data-attribute='UnitId']").val() + "&projectId=" + $("[data-attribute='ProjectId']").val() + "&taskId=" +
+                $("[data-attribute='TaskId']").val() + "&taskStatusId=" + $("[data-attribute='TaskStatusId']").val() + "&title=" + $("[data-attribute='Title']").val().trim();
+            funcGetTasks(parameters);
+            $(".requestedByName").remove();
+        }
+
+        function funcClearTaskFilter() {;
+            $("[data-attribute='TaskStatusId']").select2("val", "-1");
+            funcGetTasks("?taskStatusId=" + $("[data-attribute='TaskStatusId']").val());
+            $(".requestedByName").remove();
+        }
+        $('.dropdown-menu').click(function (event) {
+            event.stopPropagation();
+        });
+        funcGetFilterableTasks();
+        function funcGetTasks(parameters) {
+            $.ErcanAyhan.Server.GetAsync("", "/Work/GetFilterableTasks" + parameters, function (e) {
+                var todoHtml = "", inProgressHtml = "", doneHtml = "";
+                var todoCount = 0, inProgressCount = 0, doneCount = 0;
+                $(".todo").html("");
+                $(".inprogress").html("");
+                $(".done").html("");
+                for (var i = 0; i < e.length; i++) {
+                    var colorList = new Array("bg-cyan", "bg-teal", "bg-green", "bg-purple", "bg-orange")
+                    var color = colorList[Math.floor(Math.random() * colorList.length)];
+                    if (e[i].TaskStatusId == parseInt("@Arch.Core.Enums.TaskStatusTypes.ToDo")) {
+                        todoHtml += $("#taskCard").html().replace(/##taskId/g, e[i].Id).replace(/##taskStatusId/g, e[i].TaskStatusId).replace(/##Assigned/g, ($.ErcanAyhan.ToTitleCase(e[i].Assigned) == undefined ? "Atanacak Biri" : $.ErcanAyhan.ToTitleCase(e[i].Assigned)))
+                        .replace(/##TaskStatusName/g, e[i].TaskStatusName).replace(/##Title/g, $.ErcanAyhan.ToTitleCase(e[i].Title)).replace(/##Description/g, e[i].Description == null ? "" : e[i].Description).
+                        replace(/##ProjectName/g, e[i].ProjectName).replace(/##RequestedBy/g, $.ErcanAyhan.ToTitleCase(e[i].RequestedBy)).replace(/##RequestedDate/g, e[i].RequestedDate)
+                            .replace(/##ImageId/g, e[i].ImageId).replace(/##bgColor/g, color).replace(/##Initials/g, e[i].Initials);
+                        var isLightGallery = false;
+                        if (e[i].MediaIds != null) {
+                            var mediaHtml = "";
+                            var splitMediaIds = e[i].MediaIds.split(",");
+                            for (var j = 0; j < splitMediaIds.length; j++) {
+                                mediaHtml += "<a href='/Media/Viewer/" + splitMediaIds[j] + "'></a>";
+                            }
+                            //todoHtml = todoHtml.replace(/##mediaHtml/g, mediaHtml);
+                            isLightGallery = true;
+                        }
+                        //todoHtml = isLightGallery == false ? todoHtml.replace('MediaIds-' + e[i].Id + '', 'MediaIds-' + e[i].Id + ' hidden') : todoHtml;
+                        $(".todo").html(todoHtml);
+                        todoCount++;
+                    }
+                    if (e[i].TaskStatusId == parseInt("@Arch.Core.Enums.TaskStatusTypes.InProgress")) {
+                        inProgressHtml += $("#taskCard").html().replace(/##taskId/g, e[i].Id).replace(/##taskStatusId/g, e[i].TaskStatusId).replace(/##Assigned/g, ($.ErcanAyhan.ToTitleCase(e[i].Assigned) == undefined ? "Atanacak Biri" : $.ErcanAyhan.ToTitleCase(e[i].Assigned)))
+                        .replace(/##TaskStatusName/g, e[i].TaskStatusName).replace(/##Title/g, $.ErcanAyhan.ToTitleCase(e[i].Title)).replace(/##Description/g, e[i].Description == null ? "" : e[i].Description).
+                            replace(/##ProjectName/g, e[i].ProjectName).replace(/##RequestedBy/g, $.ErcanAyhan.ToTitleCase(e[i].RequestedBy)).replace(/##RequestedDate/g, e[i].RequestedDate).replace(/##ImageId/g, e[i].ImageId).replace(/##bgColor/g, color).replace(/##Initials/g, e[i].Initials);
+                        var isLightGallery = false;
+                        if (e[i].MediaIds != null) {
+                            var mediaHtml = "";
+                            var splitMediaIds = e[i].MediaIds.split(",");
+                            for (var j = 0; j < splitMediaIds.length; j++) {
+                                mediaHtml += "<a href='/Media/Viewer/" + splitMediaIds[j] + "'></a>";
+                            }
+                            //inProgressHtml = inProgressHtml.replace(/##mediaHtml/g, mediaHtml);
+                            isLightGallery = true;
+                        }
+                        //inProgressHtml = isLightGallery == false ? inProgressHtml.replace('MediaIds-' + e[i].Id + '', 'MediaIds-' + e[i].Id + ' hidden') : inProgressHtml;
+                        $(".inprogress").html(inProgressHtml);
+                        inProgressCount++;
+                    }
+                    if (e[i].TaskStatusId == parseInt("@Arch.Core.Enums.TaskStatusTypes.Done")) {
+                        doneHtml += $("#taskCard").html().replace(/##taskId/g, e[i].Id).replace(/##taskStatusId/g, e[i].TaskStatusId).replace(/##Assigned/g, ($.ErcanAyhan.ToTitleCase(e[i].Assigned) == undefined ? "Atanacak Biri" : $.ErcanAyhan.ToTitleCase(e[i].Assigned)))
+                        .replace(/##TaskStatusName/g, e[i].TaskStatusName).replace(/##Title/g, $.ErcanAyhan.ToTitleCase(e[i].Title)).replace(/##Description/g, e[i].Description == null ? "" : e[i].Description).
+                            replace(/##ProjectName/g, e[i].ProjectName).replace(/##RequestedBy/g, $.ErcanAyhan.ToTitleCase(e[i].RequestedBy)).replace(/##RequestedDate/g, e[i].DueDate).replace(/##ImageId/g, e[i].ImageId).replace(/##bgColor/g, color).replace(/##Initials/g, e[i].Initials);
+                        var isLightGallery = false;
+                        if (e[i].MediaIds != null) {
+                            var mediaHtml = "";
+                            var splitMediaIds = e[i].MediaIds.split(",");
+                            for (var j = 0; j < splitMediaIds.length; j++) {
+                                mediaHtml += "<a href='/Media/Viewer/" + splitMediaIds[j] + "'></a>";
+                            }
+                            //doneHtml = doneHtml.replace(/##mediaHtml/g, mediaHtml);
+                            isLightGallery = true;
+                        }
+                        //doneHtml = isLightGallery == false ? doneHtml.replace('MediaIds-' + e[i].Id + '', 'MediaIds-' + e[i].Id + ' hidden') : doneHtml;
+                        $(".done").html(doneHtml);
+                        doneCount++;
+                    }
+                }
+                $("#todoCount").html(todoCount == 0 ? "Yapılacak iş yok" : todoCount + " iş Yapılacak");
+                $("#inProgressCount").html(inProgressCount == 0 ? "Devam Eden iş yok" : inProgressCount + " iş Devam Ediyor");
+                $("#doneCount").html(doneCount == 0 ? "Tamamlanmış iş yok" : doneCount + " iş Tamamlandı");
+                $.ErcanAyhan.Loading.waitMe('hide');
+                $(".media-body span").tooltip();
+                //$('.media-id').lightGallery({ thumbnail: false, selector: '.media-id a' });
+            });
+        }
+
+        var selectedTaskId = null;
+        var selectedTaskStatusId = null;
+        function allowDrop(ev, e) {
+            ev.preventDefault();
+            if (e.className.indexOf(" drag-over") == -1)
+                e.className = e.className + " drag-over";
+        }
+        function DragLeave(ev, e) {
+            e.className = e.className.replace(" drag-over", "");
+        }
+
+        function drag(e) {
+            selectedTaskId = e.dataset.taskid;
+            selectedTaskStatusId = e.dataset.taskstatusid;
+            //if (e.className.indexOf(" bg-drag") == -1)
+            //    e.className = e.className + " bg-drag";
+        }
+
+        function drop(ev, e) {
+            e.className = e.className.replace(" drag-over", "");
+            //$("[data-taskstatusid='" + selectedTaskStatusId + "']")[0].className = $("[data-taskstatusid='" + selectedTaskStatusId + "']")[0].className.replace(" bg-drag", "");
+            //if (e.innerHTML.indexOf(selectedTaskId) == -1)
+            //ev.currentTarget.append($("[data-taskid='" + selectedTaskId + "']")[0]);
+            funcInsertTaskHistory(selectedTaskId, ev.currentTarget.dataset.taskstatusid, selectedTaskStatusId);
+            if (e.dataset.taskstatusid != selectedTaskStatusId) {
+                //    $.ErcanAyhan.Server.PostAsync({ TaskId: selectedTaskId, TaskStatusId: ev.currentTarget.dataset.taskstatusid }, "/Work/InsertTaskHistory", function (e) {
+                //        funcGetTasks();
+                //    });
+            }
+        }
+
+        function funcInsertTaskHistory(taskId, taskStatusId, xtaskStatusId) {
+            if (xtaskStatusId != taskStatusId) {
+                $.ErcanAyhan.Server.PostAsync({ TaskId: taskId, TaskStatusId: taskStatusId }, "/Work/InsertTaskHistory", function (e) {
+                    funcGetFilterableTasks();
+                });
+            }
+        }
+        $(".col-lg-4").attr("style", "height:" + (window.innerHeight - 180) + "px;");
+        $('.task-content').slimScroll({ height: (window.innerHeight - 180) + "px" });
+        $('.slimScrollDiv').css('overflow', '');
+
+        $.ErcanAyhan.Server.PostAsync("", "/Work/GetProjectsPersonsUnits", function (e) {
+
+            $("[data-attribute='ProjectId']").select2({
+                placeholder: 'Proje seçiniz',
+                type: "GET",
+                data: e.Projects,
+                allowClear: true
+            });
+            $("[data-attribute='RequestedBy']").select2({
+                placeholder: 'Talep eden kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+                allowClear: true
+            });
+            $("[data-attribute='Assigned']").select2({
+                placeholder: 'Atanan kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+                allowClear: true
+            });
+            $("[data-attribute='UnitId']").select2({
+                placeholder: 'Birim seçiniz',
+                type: "GET",
+                data: e.Units,
+                allowClear: true
+            });
+            $.ErcanAyhan.Loading.waitMe('hide');
+        });
+        $("[data-attribute='TaskStatusId']").select2({ minimumResultsForSearch: Infinity });
+
+        @if (ViewBag.PersonId != null)
+        {
+            <text>$("#filtreOpen").click();</text>
+        }
+    </script>
+}

@@ -1,0 +1,356 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "İş Listem";
+    var assigned = Accesses.PersonId;
+}
+<style>
+    .filter .dropdown-menu ul.menu li {
+        padding: 10px;
+    }
+
+    .filter .body {
+        padding: 0px;
+    }
+
+    .select2-chosen {
+        margin: -5px;
+    }
+
+    .filter .input-group {
+        margin-bottom: 0;
+    }
+</style>
+<link href="/assets/plugins/Select2/select2.css" rel="stylesheet" />
+<div class="card">
+    <div class="header bg-blue">
+        <h2>
+            İş Listesi
+        </h2>
+        <ul class="header-dropdown m-r-0 icon-button-demo filter card-body">
+            <li>
+                <a class="btn bg-orange waves-effect waves-float " data-toggle="dropdown" role="button">
+                    Filtreyi Aç
+                </a>
+                <ul class="dropdown-menu" style="position:relative;">
+                    <li class="header">Filtreleme Seçenekleri</li>
+                    <li class="body">
+                        <ul class="menu tasks">
+                            <li>
+                                <input class="form-control" data-attribute="Assigned" value="@assigned" />
+                            </li>
+                            <li>
+                                <input class="form-control" data-attribute="RequestedBy" />
+                            </li>
+                            <li>
+                                <input class="form-control" data-attribute="UnitId" />
+                            </li>
+                            <li>
+                                <input class="form-control" data-attribute="ProjectId" />
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" data-attribute="Title" placeholder="Başlık" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <div class="form-line">
+                                        <input type="text" data-attribute="TaskId" class="form-control" placeholder="İş No" onkeyup="if (event.keyCode == 13) { dataSource.page(1) }">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <select data-attribute="TaskStatusId" class="form-control" onchange="dataSource.page(1)">
+                                    <option value="-1" selected>Tüm İşler</option>
+                                    <option value="">Devam Ediyor ve Yapılacak</option>
+                                    <option value="36">Yapılacak</option>
+                                    <option value="37">Devam Ediyor</option>
+                                    <option value="38">Tamamlandı</option>
+                                    <option value="39">Kaldırıldı</option>
+                                </select>
+                            </li>
+                            <li>
+                                <button type="button" class="btn bg-orange waves-effect waves-float pull-left" onclick="dataSource.page(1)" data-loading="cardloading">Filtrele</button>
+                                <button type="button" class="btn bg-red waves-effect waves-float pull-right" onclick="SetValue(null); dataSource.page(1)" data-loading="cardloading">Filtreyi Kaldır</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/Work/NewOrEdit" class="btn bg-cyan waves-effect image" data-toggle="tooltip" data-original-title="Detay" data-placement="top">Yeni İş Ekle</a>
+            </li>
+        </ul>
+    </div>
+    <div class="body" style="padding:0;">
+        <div id="grid"></div>
+    </div>
+</div>
+<div class="hidden" id="comments">
+    <div class="col-md-x" style="margin-bottom:0;">
+        <div class="media shadow">
+            <div class="media-body">
+                <h4 class="media-heading">##FullName <small><b>##Date</b> yorum yaptı.</small></h4>
+                ##Description
+            </div>
+        </div>
+    </div>
+</div>
+<div id="newComment" class="hidden">
+    <div class="col-md-x" id="commentBody-##Id">
+        <div class="input-group shadow-2" style="border-top: 1px solid #f1f1f1;">
+            <div class="form-line">
+                <textarea id="comment-##Id" class="form-control" style="padding: 10px; overflow: hidden" placeholder="bir yorum yaz..." onkeyup="textAreaAdjust(this)"></textarea>
+            </div>
+            <button class="btn bg-teal waves-effect pull-right" onclick="funcInsertTaskComment('##Id',this)" style="margin: 5px;">
+                Gönder
+            </button>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="/assets/js/kendo.all.min.js"></script>
+    <script src="/assets/js/kendo.timezones.min.js"></script>
+    <script src="/assets/js/kendo.culture.tr-TR.min.js"></script>
+    <script src="/assets/js/kendo.messages.tr-TR.min.js"></script>
+    <link href="/assets/css/kendo.material.min.css" rel="stylesheet" />
+    <link href="/assets/css/kendo.common-material.min.css" rel="stylesheet" />
+    <link href="/assets/css/kendo.material.mobile.min.css" rel="stylesheet" />
+    <script src="/assets/plugins/Select2/select2.min.js"></script>
+    <style>
+        .demo-checkbox label, .demo-radio-button label {
+            min-width: inherit;
+            min-width: initial;
+        }
+
+        #grid {
+            border-top: 1px solid #2092c9 !important;
+            border: none;
+        }
+
+        .col-md-x {
+            max-width: 750px;
+        }
+
+            .col-md-x .media:last-child {
+                padding-bottom: 10px;
+            }
+
+        .k-grid-header .k-header, .k-grid-header .k-header .k-link, .k-grid-header .k-link, .k-grid-header .k-link:link, .k-pager-info, .k-scheduler-agendaview .k-scheduler-datecolumn, .k-scheduler-header {
+            color: #555;
+            font-weight: bold !important;
+        }
+
+        .media-heading {
+            color: #2196f3 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .media {
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 0;
+            color: #555;
+            padding-bottom: 0;
+        }
+
+        .shadow {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .shadow-2 {
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        tr.k-detail-row.k-alt, .k-detail-row {
+            background-color: #efefef !important;
+        }
+
+        .k-scheduler-toolbar > ul:first-child {
+            float: none;
+        }
+
+        .k-scheduler-toolbar > ul {
+            float: none;
+            text-align: center;
+        }
+
+        .k-button, .k-calendar .k-footer, .k-calendar .k-header .k-link {
+            text-transform: none;
+        }
+
+        .k-grid td {
+            padding: 3px;
+        }
+
+        .k-header.k-grid-toolbar {
+            border-color: #33a9d5;
+        }
+
+        .k-grouping-header .k-group-indicator, .k-pivot-toolbar .k-button {
+            border-color: #33a9d5;
+        }
+
+        .k-grouping-header .k-group-indicator, .k-pivot-toolbar .k-button,
+        .k-block, .k-button, .k-draghandle, .k-grouping-header, .k-header.k-grid-toolbar,
+        .k-header, .k-toolbar, .k-treemap-tile, html .km-pane-wrapper .k-header {
+            background-color: #2196F3;
+        }
+
+        .k-grid-toolbar {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .media .media-body .media-heading {
+            font-size: 14px;
+        }
+
+        .k-grid td {
+            line-height: 1.2em;
+        }
+
+        .k-dirty {
+            border-style: none;
+        }
+    </style>
+    <script>
+        var dataCount = 0;
+        kendo.culture("tr-TR");
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "/work/GetPageableTasks",
+                    dataType: "json"
+                },
+                parameterMap: function (options) {
+                    return "pageSize=" + options.take + "&pageNumber=" + options.page + "&assigned=" + $("[data-attribute='Assigned']").val() +
+                        "&requestedBy=" + $("[data-attribute='RequestedBy']").val() + "&unitId=" + $("[data-attribute='UnitId']").val() +
+                        "&projectId=" + $("[data-attribute='ProjectId']").val() + "&taskId=" + $("[data-attribute='TaskId']").val() +
+                        "&taskStatusId=" + $("[data-attribute='TaskStatusId']").val() + "&title=" + $("[data-attribute='Title']").val().trim();
+                }
+            },
+            pageSize: 10,
+            serverPaging: true,
+            batch: true,
+            schema: {
+                total: function (response) {
+                    return response[0] != undefined ? response[0].ResultCount : 0;
+                },
+                model: {
+                    fields: {
+                        Id: { editable: false },
+                        ProjectName: { editable: false },
+                        RequestedBy: { editable: false },
+                        Title: { editable: false },
+                        Description: { editable: false },
+                        RequestedDate: { editable: false },
+                        Assigned: { editable: false },
+                        TaskStatusName: { editable: false },
+                        Order: { editable: false },
+                    }
+                }
+            }
+        });
+
+
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            //groupable: true,
+            sortable: true,
+            navigatable: true,
+            scrollable: true,
+            pageable: {
+                refresh: true,
+                pageSizes: [10, 50, 100, 250, 1000],
+            },
+            detailInit: detailInit,
+            editable: true,
+            columns: [
+                { field: "Id", title: "İş No", width: 60, attributes: { style: "text-align:center;" }, filterable: false },
+                { field: "Queue", title: "Sıra", width: 30, attributes: { style: "text-align:center;" }, filterable: false },
+                { field: "Assigned", title: "Atanan", width: 100 },
+                { field: "ProjectName", title: "Proje", width: 60 },
+                { field: "Title", title: "Başlık", width: 180 },
+                //{ field: "Description", title: "Talep İçeriği" },
+                { field: "TaskStatusName", title: "Durum", width: 60 },
+                { field: "RequestedBy", title: "Talep Eden", width: 100 },
+                { field: "RequestedDate", title: "Talep Tarihi", width: 100, filterable: false },
+                //{ field: "DueDate", title: "Kapanma Tarihi" },
+                //{ field: "ResultContent", title: "Sonuç" },
+                {
+                    template: '<a href="/Work/NewOrEdit?Id=#:Id#" class="btn bg-cyan waves-effect image" data-toggle="tooltip" data-original-title="Detay" data-placement="top"><i class="material-icons">create</i></button>',
+                    width: 25
+                },
+            //    { field: "CreatedDate", title: "Kayıt Tarihi" },
+            ],
+            save: function (e) {
+                $.ErcanAyhan.Server.Post({ taskId: e.model.Id, Queue: e.values.Queue }, "/Work/UpdateTaskQueue", "");
+                dataSource.read();
+            },
+            dataBound: function (e) {
+
+            }
+        });
+
+        function detailInit(e) {
+            e.detailCell[0].innerHTML = "";
+            $.ErcanAyhan.Server.GetAsync("", "/Work/GetTaskComments?taskId=" + e.data.Id, function (t) {
+                var html = "";
+                for (var i = 0; i < t.length; i++) {
+                    html += $("#comments").html().replace("##FullName", t[i].FullName).replace("##Description", t[i].Comment).replace("##Date", t[i].NameDate);
+                }
+                e.detailCell[0].innerHTML = '<h4>Yorumlar</h4>' + html + $("#newComment").html().replace(/##Id/g, e.data.Id);
+                $.ErcanAyhan.Loading.waitMe('hide');
+            })
+        }
+        function funcInsertTaskComment(e, z) {
+            $.ErcanAyhan.Server.Post({ TaskId: e, Description: $("#comment-" + e).val() }, "/Work/InsertTaskComment", function (t) {
+                var result = {};
+                result.detailCell = [];
+                result.detailCell.push(z.parentNode.parentNode.parentNode);
+                result.data = {};
+                result.data.Id = e;
+                $("#comment-" + e).val("");
+                detailInit(result);
+            })
+        }
+        function textAreaAdjust(o) {
+            o.style.height = "1px";
+            o.style.height = (25 + o.scrollHeight) + "px";
+        }
+
+        $.ErcanAyhan.Server.PostAsync("", "/Work/GetProjectsPersonsUnits", function (e) {
+            $("[data-attribute='ProjectId']").select2({
+                placeholder: 'Proje seçiniz',
+                type: "GET",
+                data: e.Projects,
+                allowClear: true
+            });
+            $("[data-attribute='RequestedBy']").select2({
+                placeholder: 'Talep eden kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+                allowClear: true
+            });
+            $("[data-attribute='Assigned']").select2({
+                placeholder: 'Atanan kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+                allowClear: true
+            });
+            $("[data-attribute='UnitId']").select2({
+                placeholder: 'Birim seçiniz',
+                type: "GET",
+                data: e.Units,
+                allowClear: true
+            });
+            $.ErcanAyhan.Loading.waitMe('hide');
+        });
+        $("[data-attribute='TaskStatusId']").select2({ minimumResultsForSearch: Infinity });
+    </script>
+}

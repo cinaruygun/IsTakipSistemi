@@ -1,0 +1,263 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Personel İşleri Raproru";
+}
+<style>
+    .filter .dropdown-menu ul.menu li {
+        padding: 10px;
+    }
+
+    .filter .body {
+        padding: 0px;
+    }
+
+    .select2-chosen {
+        margin: -5px;
+    }
+
+    .filter .input-group {
+        margin-bottom: 0;
+    }
+
+    td {
+        padding: 10px !important;
+    }
+</style>
+<link href="/assets/plugins/Select2/select2.css" rel="stylesheet" />
+<div class="card">
+    <div class="header bg-blue">
+        <h2>
+            <span>Personel İşleri Raporu</span>
+        </h2>
+        <ul class="header-dropdown m-r-0 icon-button-demo filter card-body">
+            <li>
+                <a class="btn bg-orange waves-effect waves-float " data-toggle="dropdown" role="button">
+                    Filtreyi Aç
+                </a>
+                <ul class="dropdown-menu" style="position:relative;">
+                    <li class="header">Filtreleme Seçenekleri</li>
+                    <li class="body">
+                        <ul class="menu tasks">
+                            <li>
+                                <input class="form-control" data-attribute="Assigned" />
+                            </li>
+                            <li>
+                                <input class="form-control" data-attribute="UnitId" onclick="funcUnitChange(this)" value="@Accesses.UnitId"/>
+                            </li>
+                            <li>
+                                <input class="form-control" data-attribute="ProjectId" />
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <div class="form-line">
+                                        <label>Baş.Tarihi</label>
+                                        <input type="date" class="form-control" data-attribute="StartDate" value="@DateTime.Now.AddDays(1 - DateTime.Now.Day).ToString("yyy-MM-dd")" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <div class="form-line">
+                                        <label>Bit.Tarihi</label>
+                                        <input type="date" class="form-control" data-attribute="EndDate" value="@DateTime.Now.ToString("yyy-MM-dd")" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <select data-attribute="TaskStatusId" class="form-control" onchange="dataSource.page(1)">
+                                    <option value="-1" selected>Tüm İşler</option>
+                                    <option value="">Devam Ediyor ve Yapılacak</option>
+                                    <option value="36">Yapılacak</option>
+                                    <option value="37">Devam Ediyor</option>
+                                    <option value="38">Tamamlandı</option>
+                                    <option value="39">Kaldırıldı</option>
+                                </select>
+                            </li>
+                            <li>
+                                <button type="button" class="btn bg-orange waves-effect waves-float pull-right" onclick="dataSource.read();" data-loading="cardloading">Filtrele</button>
+                                @*<button type="button" class="btn bg-red waves-effect waves-float pull-right" onclick="SetValue(null); dataSource.read();" data-loading="cardloading">Filtreyi Kaldır</button>*@
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="btn bg-cyan waves-effect" href="javascript:void($('.k-grid-excel').click())">Excele Aktar</a>
+            </li>
+        </ul>
+    </div>
+    <div class="body" style="padding:0;">
+        <div id="grid"></div>
+    </div>
+</div>
+@section scripts{
+    <script src="/assets/plugins/Select2/select2.min.js"></script>
+    <script src="/assets/js/kendo.all.min.js"></script>
+    <script src="/assets/js/kendo.timezones.min.js"></script>
+    <script src="/assets/js/kendo.culture.tr-TR.min.js"></script>
+    <script src="/assets/js/kendo.messages.tr-TR.min.js"></script>
+    <link href="/assets/css/kendo.material.min.css" rel="stylesheet" />
+    <link href="/assets/css/kendo.common-material.min.css" rel="stylesheet" />
+    <link href="/assets/css/kendo.material.mobile.min.css" rel="stylesheet" />
+    <script src="/assets/js/jszip.min.js"></script>
+    <style>
+        #grid {
+            border-top: 1px solid #2092c9 !important;
+            border: none;
+        }
+
+        .k-grid-toolbar {
+            display: none;
+        }
+
+        .k-grid-header .k-header, .k-grid-header .k-header .k-link, .k-grid-header .k-link, .k-grid-header .k-link:link, .k-pager-info, .k-scheduler-agendaview .k-scheduler-datecolumn, .k-scheduler-header {
+            color: #555;
+            font-weight: bold !important;
+        }
+
+        .media-heading {
+            color: #2196f3 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .media {
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 0;
+            color: #555;
+            padding-bottom: 0;
+        }
+
+        tr.k-detail-row.k-alt, .k-detail-row {
+            background-color: #efefef !important;
+        }
+
+        .k-scheduler-toolbar > ul:first-child {
+            float: none;
+        }
+
+        .k-scheduler-toolbar > ul {
+            float: none;
+            text-align: center;
+        }
+
+        .k-button, .k-calendar .k-footer, .k-calendar .k-header .k-link {
+            text-transform: none;
+        }
+
+
+        .k-grid td {
+            padding: 3px;
+        }
+
+        .k-header.k-grid-toolbar {
+            border-color: #33a9d5;
+        }
+
+        .k-grouping-header .k-group-indicator, .k-pivot-toolbar .k-button {
+            border-color: #33a9d5;
+        }
+
+        .k-grouping-header .k-group-indicator, .k-pivot-toolbar .k-button,
+        .k-block, .k-button, .k-draghandle, .k-grouping-header, .k-header.k-grid-toolbar,
+        .k-header, .k-toolbar, .k-treemap-tile, html .km-pane-wrapper .k-header {
+            background-color: #2196F3;
+        }
+
+        .k-grid-toolbar {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .media .media-body .media-heading {
+            font-size: 14px;
+        }
+
+        .k-grid td {
+            line-height: 1.2em;
+        }
+
+        .k-dirty {
+            border-style: none;
+        }
+    </style>
+    <script>
+        kendo.culture("tr-TR");
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: "/Work/GetPersonTaskList",
+                    dataType: "json"
+                },
+                parameterMap: function (options) {
+                    var url = "&projectId=" + $("[data-attribute='ProjectId']").val() + "&personId=" + $("[data-attribute='Assigned']").val() + "&taskStatusId=" + $("[data-attribute='TaskStatusId']").val() + "&unitId=" + $("[data-attribute='UnitId']").val() +
+                        "&startDate=" + $("[data-attribute='StartDate']").val() + "&endDate=" + $("[data-attribute='EndDate']").val();
+                    return url;
+                }
+            },
+            pageSize: 15,
+        });
+
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            scrollable: true,
+            sortable: true,
+            toolbar: ["excel"],
+            excel: {
+                fileName: "Personel_İşleri_Raporu" + kendo.toString($("[data-attribute='StartDate']").val(), "dd.MM.yyyy") + "_" + kendo.toString($("[data-attribute='EndDate']").val(), "dd.MM.yyyy") + ".xlsx",
+                filterable: true,
+                allPages: true
+            },
+            pageable: {
+                refresh: true,
+                pageSizes: [15, 30, 50, 100, 1000]
+            },
+            columns: [
+                   { field: "Person", title: "Kişi" },
+                   { field: "Title", title: "İş" },
+                   { field: "ARequestedDate", title: "Talep Tarihi" },
+                   { field: "DueDate", title: "Bitiş Tarihi" },
+                   { field: "TasktStatusName", title: "Durum" },
+            ],
+            noRecords: true,
+            messages: {
+                noRecords: "Filtreyi Aç menüsünden filtreleme yapıp kayıt getirebilirsiniz."
+            },
+        });
+        $.ErcanAyhan.Server.PostAsync("", "/Work/GetProjectsPersonsUnits", function (e) {
+            $("[data-attribute='Assigned']").select2({
+                placeholder: 'Atanan kişiyi seçiniz',
+                type: "GET",
+                data: e.Persons,
+                allowClear: true
+            });
+            $("[data-attribute='UnitId']").select2({
+                placeholder: 'Birim seçiniz',
+                type: "GET",
+                data: e.Units,
+                allowClear: true
+            });
+            $("[data-attribute='ProjectId']").select2({
+                placeholder: 'Proje seçiniz',
+                type: "GET",
+                data: e.Projects,
+                allowClear: true
+            });
+            $.ErcanAyhan.Loading.waitMe('hide');
+        });
+        function funcUnitChange(e) {
+            $.ErcanAyhan.Server.GetAsync("", "/Work/GetUnitProjectList?unitId=" + (e.value == "" ? 0 : e.value), function (t) {
+                $("[data-attribute='ProjectId']").select2({
+                    placeholder: 'Proje seçiniz',
+                    type: "GET",
+                    data: t,
+                    allowClear: true
+                });
+            });
+            $.ErcanAyhan.Loading.waitMe('hide');
+        }
+        $("[data-attribute='TaskStatusId']").select2({ minimumResultsForSearch: Infinity });
+    </script>
+}
